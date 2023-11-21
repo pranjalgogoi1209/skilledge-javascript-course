@@ -84,3 +84,10 @@ if (ps.length < 6) {
 } else {
   console.log("Valid Password");
 } */
+
+// abhigyanam's question
+const array = [6, 0, 0, 0, 7, 1, 1, 3, 2, 9];
+
+const x = 8;
+const y = 6;
+console.log(array[x] + array[y]);
