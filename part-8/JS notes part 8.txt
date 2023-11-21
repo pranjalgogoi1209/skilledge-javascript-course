@@ -1,0 +1,46 @@
+# Single line comment : // : ctrl+/
+# Multiline comment : /* This is a
+                       Multiline comment*/ : shift + alt + a 
+# Command palette : For search files : ctrl + p 
+
+# Array: Array is an ordered collection of data, We can add different types of data which has index number.
+
+# Empty array : let a=[];
+
+# length : array.length
+
+# Index : let mix=['string', 2, 99.99, true, undefined, NaN];
+        console.log(mix[0]);   //'string'
+
+# Access an alphabet of a string inside an array :
+        console.log(mix[0][3]);
+
+# indexOf : console.log(mix.indexOf(true));    //3
+
+# Update array elements
+let fruits=['apple', 'orange', 'banana'];
+fruits[0]='Apel';
+fruits[1]='Komola';
+fruits[2]="Kol";
+fruits[3]="Narikol";
+console.log(fruits);
+
+# ARRAY METHODS
+
+    * PUSH : Add an element to the end of the array
+    * POP : Remove an element from the end of the array
+    * SHIFT : Remove an element from the start of the array
+    * UNSHIFT : Add an element to the start of the array
+
+# CONCATE (Concatenation) : 
+    It does not modify the existing array, it will create a new array
+
+# INCLUDES METHOD : It provides a boolean value (true/false), it checks either an element is available in the array or not
+
+# JOIN METHOD : We can join all the elements of an array and make it a string and we can saparate them with anything of our choice, It doesn't effect on the previous array, we have to store it in a new array
+
+# REVERSE METHOD : array.reverse(); // It reverse the elements of the array and modify the existing array
+
+# SLICE METHOD : It slices the array, It returns a new array, first argument is including and Second argument is excluding
+
+# SPLICE METHOD : array.splice(index, no. of element to delete, adding elements at the same index);

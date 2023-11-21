@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do-list Web Application</title>
+</head>
+<style>
+    body{
+        display:flex;
+        justify-content: center;
+        background-color: mediumaquamarine;
+    }
+    div{
+        border: 2px solid black;
+        background-color: wheat;
+    }
+    h1{
+        text-align: center;
+        text-decoration: underline;
+        color: red;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    li{
+        line-height: 25px;
+        list-style-type: none;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: flex;
+        align-items: center;
+    }
+    .changed{
+        text-decoration:line-through;
+    }
+    .unchanged{
+        text-decoration: none;
+    }
+    
+</style>
+<body>
+    <div>
+        <h1>To do list</h1>
+        <ol>
+            <li>Wake up: 6.45am <button>Done</button>&nbsp;<button><img src="recyclebin.jpeg" width="10"></button></li>
+            <li>Fresh: 7.00am - 7.10am <button>Done</button>&nbsp;<button><img src="recyclebin.jpeg" width="10"></button></li>
+                <li>Morning Walk: 7.10am - 7.35am <button>Done</button>&nbsp;<button><img src="recyclebin.jpeg" width="10"></button></li>
+                <li>Cook: 7.35am - 8.45am <button>Done</button>&nbsp;<button><img src="recyclebin.jpeg" width="10"></button></li>
+                <li>Bath: 8.45am - 9.15am <button>Done</button>&nbsp;<button><img src="recyclebin.jpeg" width="10"></button></li>
+                <li>Pray: 9.15am - 9.30am <button>Done</button>&nbsp;<button><img src="recyclebin.jpeg" width="10"></button></li>
+                <li>Eat: 9.30am - 9.45am <button>Done</button>&nbsp;<button><img src="recyclebin.jpeg" width="10"></button></li>
+                <li>Work: 9.45am - 12.45pm <button>Done</button>&nbsp;<button><img src="recyclebin.jpeg" width="10"></button></li>
+                <li>Nap: 12.45pm - 1.15pm <button>Done</button>&nbsp;<button><img src="recyclebin.jpeg" width="10"></button></li>
+                <li>Study: 1.15pm - 4.30pm <button>Done</button>&nbsp;<button><img src="recyclebin.jpeg" width="10"></button></li>
+                <li>Snack with coffee: 4..30pm - 5pm <button>Done</button>&nbsp;<button><img src="recyclebin.jpeg" width="10"></button></li>
+                <li>Work: 5pm - 7pm <button>Done</button>&nbsp;<button><img src="recyclebin.jpeg" width="10"></button></li>
+                <li>Study: 7pm - 8pm <button>Done</button>&nbsp;<button><img src="recyclebin.jpeg" width="10"></button></li>
+                <li>Cook & Eat: 8pm - 8.30pm <button>Done</button>&nbsp;<button><img src="recyclebin.jpeg" width="10"></button></li>
+                <li>Study: 8.30pm - 10.30pm <button>Done</button>&nbsp;<button><img src="recyclebin.jpeg" width="10"></button></li>
+                <li>Free Time: 10.30pm - 11pm <button>Done</button>&nbsp;<button><img src="recyclebin.jpeg" width="10"></button></li>
+                <li>Sleep:11pm <button>Done</button>&nbsp;<button><img src="recyclebin.jpeg" width="10"></button></li>
+        </ol>
+        <button class="new-task">Add new task</button>
+    </div>
+    <script>
+        var liVar=document.querySelectorAll('li');
+        var newTask=document.querySelector('.new-task');
+        var ol=document.querySelector('ol');
+
+        liVar.forEach(function(item){
+            item.firstElementChild.addEventListener('click',function(){
+                item.classList.add('changed');
+                item.firstElementChild.textContent='Undo';
+                item.firstElementChild.addEventListener('click',function(){
+                    item.classList.add('unchanged');
+                    item.firstElementChild.textContent='Done';
+                });
+            });
+        });
+        liVar.forEach(function(item){
+            item.lastElementChild.addEventListener('click',function(){
+                item.remove();
+            });
+        })
+        newTask.addEventListener('click',function(){
+            var li=document.createElement('li');
+            var text=document.createTextNode('New Task');
+            li.appendChild(text);
+            // ol.prepend(li);
+            ol.appendChild(li);
+            // newTask.previousSibling.appendChild(li);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+# THIS KEYWORD : In JavaScript, the this keyword refers to an object. Which object depends on how this is being invoked (used or called). It doesn't work with arrow function
+
+# DOM : 
+    * Element node
+    * Text node
+
+<p> I am Paragraph </p>

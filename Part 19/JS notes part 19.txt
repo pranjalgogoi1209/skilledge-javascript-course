@@ -1,0 +1,7 @@
+# HIGHER ORDER FUNCTION : Higher Orders Functions are functions that perform operations on other functions. In this definition, operations can mean taking one or more functions as an argument OR returning a function as the result
+
+# HOISTING : Javascript scan whole code first then run it. At the time of scan JS do Hoisting.
+
+# DYNAMIC TYPE CASTING : we can update vales of a variable created using var and let.
+
+# When we use style in js then we cann't write the value like: background-color. We have to write it like backgroundColor.

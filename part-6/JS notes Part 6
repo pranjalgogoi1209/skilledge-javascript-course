@@ -1,0 +1,11 @@
+# JS FILE IN HEAD TAG:
+
+    1. The js file must be downloaded
+    2. The js file must be executed
+*Web browser render our file top to buttom.
+*If we place our script tag in head tag, Html file will not render till the above procedure will not finished.
+*That's why we place script tag at the end of body tag.
+    In this Browser will first render the html page, then it will proceed the above procedure, And this is the rendering procedure.
+
+#SHORTCUT FOR MULTILINE COMMENT IN JAVASCRIPT
+Shift+Alt+A

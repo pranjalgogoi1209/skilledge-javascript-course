@@ -1,0 +1,24 @@
+# PANGRAM : Which sentance contains all alphabate. eg : The quick brown fox jumps over the lazy dog
+
+# SCOPE : Scope in JavaScript refers to the current context of code, which determines the accessibility of variables to JavaScript
+
+# GLOBAL SCOPE : The variable a can be used anywhere in the program. The value of a global variable can be changed inside a function
+
+# FUNCTION SCOPE : Variables that are declared inside a function are called local variables and in the function scope. Local variables are accessible anywhere inside the function. eg : var
+
+# BLOCK SCOPE :  Variables that is declared inside a specific block & can't be accessed outside of that block. eg: let & const
+
+# LEXICAL SCOPE : It is the ability for a function scope to access variables from the parent scope.
+
+# FUNCTION STATEMENT : The function statement declares a function. A declared function is "saved for later use", and will be executed later, when it is invoked (called)
+
+# FUNCTION EXPRESSION : A function expression is very similar to, and has almost the same syntax as, a function declaration. The main difference between a function expression and a function declaration is the function name, which can be omitted in function expressions to create anonymous functions
+
+# FUNCTIONS ARE FIRST CLASS CITIZENS :
+    * functions as values
+    * functions as arguments
+
+# USE OF LOOP
+    * FOR OF : Array
+    * FOR IN : Object
+    * NORMAL FOR : in a range of number

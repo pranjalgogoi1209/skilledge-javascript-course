@@ -1,0 +1,135 @@
+#INDEX:
+
+*Index number starts from 0
+*In javaScript, To find index Number syntax is:
+    variable_name/string.indexOf('word/character');
+    eg:
+        *let tvShow='catdog';
+         tvShow.indexOf('cat');  //0
+         tvShow.indexOf('dog');  //3
+         tvShow.indexOf('z'); //-1 (not found) 
+
+        *"PRANJAL"[4]; //J
+         "PUP"[3];   //Undefined
+
+        *let park="Yellowstone";
+        const index=park.indexOf("Stone")
+        //value of index is -1
+        //"Stone" is not present in park, so park.indexof("Stone") will be -1
+
+        *let yell="GO AWAY!!";
+         let index=yell.indexOf("!");
+         //value of index will be 7
+
+
+#SLICE:
+
+*Slicing of a string : The syntax is:
+    1.variable_name/string.slice(startIndex,endIndex);
+        //startIndex : Inclusive
+        //endIndex : Exclusive : No. Before the endIndex
+        eg:
+            'pranjal'.slice(0,4);   //'pran'
+    2.variable_name/string.slice(startIndex);
+        //If only one index is there, then it will be the startIndex, and lastIndex will be the end character of the string.
+        eg:
+            'pranjal'.slice(2);  //'anjal'
+    3.variable_name/string.slice();
+        //It will copy the variable / string
+        eg:
+            let name='rahul';
+            let copyOfName=name.slice();
+            //copyOfName = 'rahul'
+*eg:
+    let str='supercalifragilisticexpialidocious'
+    str.slice(0,5); //'super'
+    str.slice(5);   //'califragilisticexpialidocious'
+*If I want to remove dollar sign from the value:
+    eg:
+        const dollarAmount='$50';
+        newDollarAmount=dollarAmount.slice(1);
+        //newDollarAmount=50
+
+
+#REPLACE:
+
+*eg:
+    let annoyingLaugh='teehee so funny! teehee!';
+    newAnnoyingLaugh=annoyingLaugh.replace('teehee','haha');
+    //newAnnoyingLaugh='haha so funny! teehee!'
+    //replace method will replace only the first instace of that word.
+
+
+#CONCETENATION:
+
+*eg:
+    let age='5'+'4';
+    //age = '54'
+
+    *let x="Age of Pranjal is "+(5+7)+" !";
+    //x="Age of Pranjal is 12 !"
+
+
+#UPPERCASE and LOWERCASE:
+
+*eg:
+    let song="london calling";
+    song=song.toUpperCase();
+    //song="LONDON CALLING"
+    song=song.toLowerCase();
+    //song="london calling"
+
+
+#TRIM:
+
+*eg:
+    let name="          pranjal     gogoi           ";
+    let newName=name.trim();
+    //newName=pranjal      gogoi
+    //spaces from start and end will delete, but not the mid spaces between two word.
+
+
+#MULTIPLE METHODS or METHOD CHAINING:
+
+*eg:
+    *let userInput="     TODD@gmail.com";
+      let cleanedInput=userInput.trim().toLowerCase();
+      //"todd@gmail.com"
+
+    *"GARBAGE!".slice(2).replace("B","");
+      //'RAGE!'
+
+
+#STRING ESCAPE:
+
+   \n : newline
+   \' : single quote
+   \" : double quote
+   \\ : backslash
+*eg:
+    let x="I\'m Pranjal";
+    //x = "I'm Pranjal"
+
+
+#TEMPLATE STRING:
+
+*eg:
+    let age=82;
+    let x=`My grandfather's age is ${age}`;
+    //x=My grandfather's age is 82
+*We can add any variable, any operation in template string using ${}
+*We can add ' , " , that much we want , no need of escape character.
+*eg:
+    const minAge=21;
+    const yourAge=10;
+    `You must be at least ${minAge} years. Come back in ${minAge-yourAge} years`
+    //'You must be at least 21 years. Come back in 11 years'
+
+
+#NULL vs UNDEFINED:
+
+*NULL:"Intentional absence of any value" Must be assigned
+    let age=null;
+    //We can assign null as a value in a variable, So that in future we can add any value in that variable.
+*UNDEFINED:Variables that do not have an assigned value are undefined.
+    *When javaScript doesn't find anything it returns undefined.

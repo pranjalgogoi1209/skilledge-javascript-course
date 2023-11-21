@@ -1,0 +1,84 @@
+#STRING:
+
+*String is a set of characters, wrap with double quote or single quote.
+*We can give space between words.
+    eg:
+        "Pranjal Gogoi"
+*We can use single quote under double quote, and Double quote under single quote.
+    eg:
+        * "Pranjal Gogoi is a student from 'FSD11' batch"
+        * 'Pranjal Gogoi is a student from "FSD11" batch'
+
+
+#TYPE OF:
+
+*eg:
+    *typeof "pranjal";   //'string'
+
+    *let age=23;
+     typeof age;    //'number'
+
+
+#CONCATENATION:
+
+* + operator is behave like a CONCATENATION.
+*eg:
+    "Pranjal"+"Gogoi"   //'PranjalGogoi'
+    "Pranjal"+" "+"Gogoi"   //'Pranjal Gogoi'
+    "Pranjal"+2022  //'Pranjal2022'
+    "Girl"+23   //'Girl23'
+    "Boy"-43    //NaN   //CONCATENATION only works with + operator
+
+
+#LENGTH:
+
+*eg:
+    "pranjal".length    //7
+    "sacrifice".length  //9
+    "pranjal gogoi".length  //13
+
+
+#INDEX:
+
+0  1  2  3  4  5  6  7  8  9
+S  K  I  L  L     E  D  G  E
+
+*eg:
+    "SKILL EDGE"[0] //'S'
+    "SKILL EDGE"[4] //'L'
+    "SKILL EDGE"[8] //'G'
+    "SKILL EDGE"[3] //'L'
+    "SKILL EDGE"[5] //' '
+    "SKILL EDGE"[20] //undefined
+*How do you get the last character inside a string?
+    const gibberish="ajdfaljfgalghaljgladkjf";
+    gibberish[gibberish.length-1]   //'f'
+    //(gibberish.length - 1) will be the index of last character of a string.
+
+
+#METHODS:
+
+* .toUpperCase()
+* .toLowerCase()
+    *eg:
+        let msg="You are so grounded";
+        msg=msg.toUpperCase();
+        //Now value of msg is 'YOU ARE SO GROUNDED'
+*TRIM:
+    "   Pranjal    Gogoi    "
+    *Starting space is called leading space.
+    *Ending space is called trailing space
+    *eg:
+        let x="     Pranjal     Gogoi is best.      ";
+        x=x.trim();
+        //x="Pranjal     Gogoi is best."
+#INDEX OF:
+    *eg:
+        "baseball".indexOf('b');    //0
+        "Pranjal".indexOf('anjal');     //2
+        "Gogoi".indexOf(z);  //-1
+        //Wheneven we request for a value doesn't exist in the string then it will throw you -1
+*REPEAT:
+    *eg:
+        "pranjal".repeat(2);
+        //"pranjalpranjal"

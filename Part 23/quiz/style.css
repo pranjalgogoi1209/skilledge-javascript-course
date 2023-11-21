@@ -1,0 +1,13 @@
+.main{
+    display: flex;
+}
+
+.quiz{
+    width: 50%;
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

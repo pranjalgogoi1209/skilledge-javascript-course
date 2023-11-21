@@ -1,0 +1,78 @@
+#TRUTHY AND FALSY VALUES:
+
+*Falsy value:
+    * 0
+    * "" : Empty string
+    * false
+    * null
+    * undefined
+    * NaN
+*Truthy value:
+    * Everything apart from falsy value is called truthy value.
+    * "string"
+
+
+#LOGICAL OPERATOR:
+
+    && : AND
+        Both condition should be true.
+        eg:
+            9>5 && 'a'==='a'
+                (true)
+            true && false
+                (false)
+            "abc".length===3 && 1+1==3
+                     true    &&   false
+                (false)
+            1==1 && 5>2 && 54<64 && true
+                (true)
+            true && true && true && false
+                (false)
+    || : OR
+        Atleast one condition should be true.
+        eg:
+            ture || true
+                (true)
+            false || false
+                (false)
+            10!==10 || 1===1
+                (true)
+            10/2===5 || null
+                (ture)
+            0 || undefined
+                (false)
+    !  : NOT
+        It will reverse falsy to truthy , and truthy to falsy.
+        eg:
+            !false
+                (true)
+            !true
+                (false)
+            !(0===0)
+                (false)
+            !(3<=5)
+                (false)
+
+
+#OPERATOR PRECEDENCE:
+
+    Priority of logical operators decreasing wise:
+        ! > && > ||
+
+    eg:
+    true && false || true
+        (true)
+    false || true && false
+        (false)
+    !false || true & false
+        (true)
+
+#TERNERY OPERATOR:
+
+    condition ? expressionIfTrue : expressionIfFalse
+
+    7>3 ? console.log("Greater than") : console.log("less than");
+
+    let age=10;
+    let output=age>10 ? "Greater than age" : "less than age";
+    console.log(output);    

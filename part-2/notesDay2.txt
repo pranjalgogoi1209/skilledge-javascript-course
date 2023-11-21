@@ -1,0 +1,112 @@
+ #VARIABLE:
+
+*Variables are like  "labeled jars" for a value in Javascript. 
+*We can store a value and give it a name, so that we can -
+    -recall it
+    -use it 
+    -or change it later on.
+*How to create a variable:
+    =We have 3 keywords to create variable:
+        1.let
+        2.const
+        3.var
+            eg:
+                let age=72;
+            eg2:
+                let parentsAge=50;
+                let childAge=parentsAge-30;
+*A variable name cann't be a keyword/object like let, const, var, document.
+
+
+#KEYWORDS:
+
+Keywords are predefined, reserved words used in programming that have special meanings to the compiler.
+    eg:
+        let is a keyword, which is use to create a variable. We cann't give variable name as any keyword.
+
+
+#TYPES OF CASES:
+
+*snake_case : Use in Django to create apps.
+*PascalCase : Use in Python, Django to create classes.
+*camelCase : Use in Javascript to create variable.
+*This is not a rule from these programming languages that we need to use these cases, But It is a convension made by these programming language community.
+
+
+#RULES TO DECLARING A VARIABLE:
+
+*We have to use let/const/var keyword before the variable name.
+*Variable name can't be a keyword or object, like let , document.
+*We should use cases like, snake case or camel case: camel case is preferable for JavaScript.
+    snake case=number_of_children
+    camel case=numberOfChildren
+*We don't need to define the type of variable whether it is int or float , like C,C++,Java.
+*We cannot redecalare same name variable twice in a file with let keyword. But we can update the same variable.
+*We can redecalare same name variable twice in a file with var keyword and we can update the same variable as well.
+*var variables can be updated and re-declared within its scope.
+*let variables can be updated but no re-declared. 
+*const variables can neither be updated nor re-delared.
+
+
+#SYNTAX OF VARIABLE:
+
+    let someName=value;
+
+
+#iMPORTANT:
+
+*We can recall the variable.
+    let myAge=23;
+    let myFatherAge=46;
+    let ourAgeGape=myFatherAge-myAge; //23
+*We can update the variable.
+    let age=22;
+    age=age-2;
+    //Now the value of age is 20
+    age=45;
+    //Now the value of age is 45
+*If we want a constant variable then we should use const keyword while declaring the variable.
+    const pi=3.14;
+    //Now no one can change or update this pi variable.
+*We have 3 ways to declare a variable
+    i. let = It has been using since ES6 (means from 2015).
+    ii. const = It uses to make a variable constant, so that no one can change or update the variable.
+    iii. var = It has been using since Javascript created.
+*Before let & const, var was the only way of declaring variables. But These days, there isn't really a reason to use it.
+*The Difference between let and var are-----
+    i. We can't redeclare the variable with let keyword , On the other hand We can redeclare the variable with var keyword.
+*Always write the name of a boolean value starting with is.... 
+    eg:
+        let isIndia=true;
+
+
+#OPERATORS:
+
+1.UNARY OPERATOR:
+    eg1: 
+        let age=22;
+        age=age+1;
+            //or
+        age+=1
+        //Both answer will be same , which is 23
+    eg2:
+        let apple=2;
+        let banana=5;
+        banana=banana+apple;
+            //or
+        banana+=apple;
+        //Both answer will be same, which is 7
+2.INCREAMENT & DECREAMENT:
+    *Preincreament & Predecreament:
+        let age=22;
+        ++age;  //It means age+1(Preincreament)
+        --age;  //It means age-1(Predecreament)
+            eg:
+                let windSpeed=75;
+                windSpeed+=6;   //Now WindSpeed is 81
+                windSpeed++;    //Now WindSpeed is 81
+                //(We don't neet to store value of INCREAMENT or DECREAMENT variables, It stores automatically)
+    *Postincreament & Postdecreament:
+        let age=22;
+        age++;  //It means age+1(Postincreament)
+        age--;  //It means age-1(Postdecreament)

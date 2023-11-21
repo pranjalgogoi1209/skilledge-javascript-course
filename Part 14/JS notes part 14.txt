@@ -1,0 +1,22 @@
+# WHY FUNCTIONS ARE CALLED FIRST CLASS CITIZEN ?
+    1. functions as values
+    2. functions as arguments
+    3. return as value within a function
+
+# CALLBACK FUNCTION : A JavaScript callback is a function which is to be executed after another function has finished execution. A more formal definition would be - Any function that is passed as an argument to another function so that it can be executed in that other function is called as a callback function
+
+# SETTIMEOUT METHOD : The setTimeout() method schedules a one-time callback after the specified time in milliseconds
+
+# FOR EACH METHOD : The forEach() method calls a function for each element in an array.
+                    array.forEach(function(item, index){});
+
+# MAP METHOD : map() creates a new array from calling a function for every array element.
+                newArray=array.map(function(item){return });
+
+# FIND METHOD : The find() method returns the value of the first element that passes a test. The find() method executes a function for each array element
+
+# FILTER METHOD : The JavaScript filter array function is used to filter an array based on specified criteria
+
+# SOME METHOD : The some() method of Array instances tests whether at least one element in the array passes the test implemented by the provided function
+
+# EVERY METHOD : The every() method executes a function for each array element. The every() method returns true if the function returns true for all elements

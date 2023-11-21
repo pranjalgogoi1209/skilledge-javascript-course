@@ -1,0 +1,12 @@
+# SELECTORS :
+    * document.getElementById();
+    * document.getElementsByClassName(); :--> HTML COLLECTION
+    * document.getElementsByTagName(); :--> HTML COLLECTION
+    * document.querySelector(); :--> SELECT FIRST ELEMENT
+    * document.querySelectorAll(); :--> SELECT ALL ELEMENTS :--> NODE LIST
+
+# HTML COLLECTION :
+    * document.getelementbyClassName();
+    * document.getelementbyTagName();
+# NODE LIST :
+    * document.querySelectorAll();

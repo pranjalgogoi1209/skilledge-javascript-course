@@ -1,0 +1,1 @@
+# WINDOW = use window on console for the reference of events, It's a super object

@@ -1,0 +1,7 @@
+# SHORT HAND PROPERTY : whenever you have a variable which is the same name as a property on an object, when constructing the object, you can omit the property name
+
+# COMPUTED PROPERTY : Computed properties allow you to use the values of expressions as property names of an object
+
+# METHOD : JavaScript methods are actions that can be performed on objects. A JavaScript method is a property containing a function definition
+
+# DOM : DOCUMENT OBJECT MODEL

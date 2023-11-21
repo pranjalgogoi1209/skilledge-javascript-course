@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>List1
+            <p>I am paragraph</p>
+        </li>
+        <li>List2</li>
+        <li>List3</li>
+    </ul>
+    <button>Add a new todos</button>
+    <button>Change color</button>
+
+    <script>
+        var button=document.querySelectorAll('button');
+        var ul=document.querySelector('ul');
+        var arr=['green', 'orange', 'yellow']
+        
+        button[0].addEventListener('click',function(e){
+            var liNew=document.createElement('li');
+            var liNewText=document.createTextNode('New todos');
+            liNew.appendChild(liNewText);
+            ul.appendChild(liNew);
+        });
+
+        // Only one color is working not all of 3
+        arr.forEach(function(item){
+            button[1].addEventListener('click',function(){
+                ul.parentElement.style.backgroundColor=`${item}`;
+            });
+        });
+
+        ul.addEventListener('click',function(e){
+            // event bubbling is happening that's why when ever we click on child of ul , event will also act for ul
+            console.log('Event bubbling is happening');
+            console.log(e.target);
+            e.target.remove();
+        });
+    </script>
+</body>
+</html>

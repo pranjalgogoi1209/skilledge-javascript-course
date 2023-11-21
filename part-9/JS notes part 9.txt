@@ -1,0 +1,10 @@
+# PASS BY VALUE :
+    When we have a variable with primitive types of data, we can pass that values into another variable
+
+# PASS BY REFERENCE :
+    When we have a variable with array that means we have the reference/address of the array, we can pass that reference into another variable
+
+# OBJECT : 
+    An object is a collection of properties, and a property is an association between a name (or key) and a value. A property's value can be a function, in which case the property is known as a method.
+    Javascript converts all the keys into string
+        

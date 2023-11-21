@@ -1,0 +1,10 @@
+# UPDATING PROPERTIES IN AN OBJECT : select existing key and assign a new value
+
+# ADDING PROPERTIES IN AN OBJECT : select a new key and assign a value
+
+# REFERENCE TYPE ASSIGNMENT : If passing object or array then passing the reference/address of the value
+
+# FOR LOOP :
+    for(initialization; condition; increment/decrement){
+        code....
+    }

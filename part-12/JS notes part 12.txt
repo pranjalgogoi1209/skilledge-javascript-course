@@ -1,0 +1,12 @@
+# FUNCTION : A JavaScript function is a block of code designed to perform a particular task. A JavaScript function is executed when "something" invokes it (calls it).
+
+# ARGUMENT : The parameters, in a function call, are the function's arguments. JavaScript arguments are passed by value: The function only gets to know the values, not the argument's locations. If a function changes an argument's value, it does not change the parameter's original value.
+
+# PARAMETER : unction parameters are the names listed in the function definition. Function arguments are the real values passed to (and received by) the function.
+
+# FUNCTION WITH RETURN KEYWORD :     
+    * If we don't return anything , it will throw undefined
+    * Return works like a break, after using return fucntion will exit, Once we use return keyword, the below code in function will not be executed
+
+# INCLUDES METHOD : It checks an element is in the array or not, it return boolean value
+

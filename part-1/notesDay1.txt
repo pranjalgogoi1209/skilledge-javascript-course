@@ -1,0 +1,89 @@
+* Brendan Eich is the creator of JavaScript programming language
+* He created Javascript in just 10 days
+
+
+# JAVASCRIPT:
+
+* Javascript is the most used language these days.
+* We can make Frontend, Backend, Desktop application using Javascript.
+* SpaceX has a dashboard in their Rocket which is build in JavaScript.
+* Bandersnatch is a TV show, which build using JavaScript.
+* We don't need to download JavaScript , WebBrowser implements Javascript, So we should keep updating our WebBrowser.
+
+
+# ECMASCRIPT:
+
+*It is not a language itself.
+*It is a specification, Which is like a document, Which has some set of rules to create Programming Language.
+*ECMASCRIPT is a JavaScript standard meant to ensure the interoperability of webpages across different web browsers.
+
+
+# TC39: The deciders
+
+* Technical Committee 39 is in charge of maintaining and evolving the ECMAScript spec. 40-60 delegates meet 6 times each year to discuss proposed changes to the spec.
+
+
+# ES6 TOOK FOREVER:
+
+* The release of ES6 (ES2015) took almost 6 years.
+* Many features were ready much sooner, but had to wait until the main release.
+* Other features needed more time, but were under pressure to hurry up.
+
+
+
+-------------------------------------------------------------------------------------------------
+
+
+
+# DATA TYPE:
+
+	i. PRIMITIVE TYPES:
+		1.Number : Javascript has only one type for number.
+		2.String
+		3.Boolean : true or false
+		4.Null
+		5.Undefined
+		Technically there are two more : Symbol and BigInt
+		6.NaN : Compare NaN with function - isNaN(NaN) // true 
+	ii. OBJECT TYPE / REFERENCE TYPE : 
+		1. Objects
+		2. Array
+
+
+# REPL= READ, EVALUATE, PRINT, LOOP
+
+
+# HOW ADD A COMMENT?
+= Use // for single line comment in JavaScript.
+CTRL + /
+
+= USE /*  */ for multi line comment in JavaScript
+Alt + Shift + A
+
+
+# OPERATORS:
+
+* Addition: +
+* Subtraction: -
+* Multiplication: *
+* Division: /
+* Moldulus: % : It is reminder.
+* Exponents: ** : It is power of any number. eg: 2**2 = 4
+
+{1/0 = Infinity, -1/0 = -Infinity}
+
+
+# NaN=Not a number:
+
+* NaN is a numeric value that represents something that is not a number, NaN is a datatype , But we can use it as a value.
+* 'pranjal'/5 : NaN
+* 0/0 : NaN
+* 1+Nan : NaN
+* 200+0/0 : NaN
+
+# P E M D A S:
+
+1. Perentheses : ()
+2. Exponents : **
+3. Multiplication/Division (That one which is on left side will be more powerful) eg: 4 / (1+1) * 4
+4. Addition/Subtraction

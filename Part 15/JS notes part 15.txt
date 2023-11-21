@@ -1,0 +1,13 @@
+# REDUCE METHOD : The reduce() method executes a reducer function for array element. The reduce() method returns a single value: the function's accumulated result
+
+# DEFAULT PERAMETER : It allows the users that they can initialize a function with the default value even if there are no arguments supplied to the function call
+
+# SPREAD OPERATOR : It allows us to quickly copy all or part of an existing array or object into another array or object, Use it inside an array
+    * USES : 
+        * array in array
+        * array in function
+        * object in object
+
+# REST OPERATOR :  The rest parameter syntax allows a function to accept an indefinite number of arguments as an array
+
+# DESTRUCTURING : Destructuring is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables

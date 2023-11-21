@@ -1,0 +1,72 @@
+#We can use Math object, Does not need to import that.
+
+*It has some property and some method
+*method writes with peranthesis ()
+*eg:
+    *Math.random() is a method:
+        Math.random()   //0.29597957395739
+                    //3.709275027522709
+                    //0.9798275938797
+                    //It could be any random number between 1 and 10.
+    *Math.PI is a property:
+        const PI=Math.PI;   //PI=3.141592653589793
+    *To round any number:
+        Math.round(4.4)    //4
+        Math.round(4.6)    //5
+        Math.round(4.5)    //5   
+    *Absolute value of any number:
+        Math.abs(-465)  //465
+        Math.abs(-100)  //100
+    *To get the power of something: (We can do it with exponents also, eg: 3**2 = 9) 
+        Math.pow(3,2)   //9
+        Math.pow(7,3)   //343
+    *Remove decimal from a number:
+        Math.floor(4.99)    //4
+        Math.floor(4.2)     //4
+
+
+#To CONVERT THE TYPE OF A VALUE:
+
+*String to integer:
+    parseInt("24")  //24
+    parseInt("24.987")  //24
+    parseInt("23dayslater") //23
+    parseInt("$24") //NaN
+    //leading part alwyas start with a number or space
+
+*String to float:
+    parseFloat("24.987")    //24.987
+    parseFloat("24")    //24
+    parseFloat("24.0dayslater") //24
+    parseFloat("24.987 dayslater") //24.987
+    //It is similar with parseInt , but It also take the decimal number.
+
+
+#BOOLEAN:
+    true / false
+    4>5 //false
+    18>12   //true
+    "a"<"A" //false
+    //Don't check it with string, bcz "a" and "A" 's number represent in Computer is different, May be the number representaion of "a" is greater tha "A" .
+
+
+#ASSIGNMENT OPERATOR:   (TYPE COERCION/TYPE CONVERSION)
+    == (Abstracmt equality comparison) :
+        //See in ecmascript documentation , 11.2 for the rules of this operatior.
+        1.Check for types.
+        2.If types are equal then directly compare.
+        3.If typers are NOT equal, first convert and then compare.
+        eg:
+            '20'==20    //true
+    ===
+    eg:
+        1.If the types are not equal then it returns false.
+        eg:
+            '20'===20      //false
+
+
+#TO PRINT ANYTHING:
+
+    console.log("Hello World!")     //Hello World!
+    
+

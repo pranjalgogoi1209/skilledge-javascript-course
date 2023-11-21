@@ -1,0 +1,10 @@
+Today's covered topics
+1. dblclick event
+2. window : It is a super object
+3. load event
+4. mousemove event
+5. copy event
+6. e.offsetX, e.offsetY
+7. background color changing using mousemove event
+8. wheel event
+9. popup project

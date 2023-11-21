@@ -1,0 +1,14 @@
+# DOM TRAVERSAL:
+    * .children : We cann't use forEach in html collection, Use Array constructor to use forEach
+    * .parentElement
+    * .firstElementChild
+    * .lastElementChild
+    * .nextElementSibling
+    * .previousElementSibling
+
+# CONSTRUCTOR :
+    * String()
+    * Array.from()
+
+# EVENT BINDING :
+    * .addEventListner()

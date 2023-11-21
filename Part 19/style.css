@@ -1,0 +1,12 @@
+.new-class{
+    color: red;
+}
+
+.success{
+    background-color: greenyellow;
+}
+
+.fail{
+    background-color: red;
+    color: white;
+}
