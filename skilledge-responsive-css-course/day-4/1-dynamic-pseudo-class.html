@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DYNAMIC_PSEUDO_CLASS</title>
+    <style>
+      *{
+        margin: 0;
+      }
+
+      div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        border-radius: 1vw;
+        background-color: cadetblue;
+      }
+
+      a{  
+        text-decoration: none;
+        padding: 1vw 2vw;
+        border-radius: 1vw;
+        background-color: bisque;
+        font-weight: 700;
+        font-size: 2vw;
+        cursor: pointer;
+        border: 0.2vw solid black;
+      }
+
+      /* For Non-Visited Link */
+      a:link{
+        color:brown;
+      }
+
+      /* For Visited Link */
+      a:visited{
+        color: blue;
+      }
+
+      /* For Mouse Over Link */
+      a:hover{
+        padding: 1.2vw 2.4vw;
+        font-size: 2.5vw;
+      }
+
+      /* For Selected Link */
+      a:active{
+        color: pink;
+        background-color: white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <a href="https://knowledge365.in/" target="_blank">Next</a>
+    </div>
+  </body>
+</html>

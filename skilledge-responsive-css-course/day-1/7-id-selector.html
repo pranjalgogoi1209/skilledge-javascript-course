@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ID SELECTOR</title>
+    <style>
+      *{
+        margin: 0;
+        font-family: poppins;
+      }
+
+      body{
+        background-color: antiquewhite;
+      }
+
+      nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2vw 0;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        border-bottom: 0.1vw solid rgba(0, 0, 0, 0.2);
+      }
+
+      .nav-logo{
+        background-image: url('https://th.bing.com/th?id=OIF.OHg%2bXqEw4LSA5IuFCmT6TQ&pid=ImgDet&rs=1');
+        background-size: cover;
+        background-position: center;
+        width: 10vw;
+        height: 10vw;
+        border-radius: 100vw;
+        box-shadow: 0.5vw 0.5vw 0.5vw rgba(0, 0, 0, 0.5);
+      }
+
+      .nav-button{
+        display: flex;
+        justify-content: space-around;
+        gap: 5vw;
+      }
+
+      .nav-button li, .nav-button a{
+        text-decoration: none;
+        list-style-type: none;
+        color: black;
+        font-size: 3vw;
+        cursor: pointer;
+      }
+
+      .nav-button li:hover, .nav-button a:hover{
+        color:rgb(62, 117, 220);
+      }
+
+      main{
+        padding: 2vw;
+      }
+
+      section{
+        margin-left: 3vw;
+        margin-right: 3vw;
+      }
+
+      .one{
+        background-image: url('https://images.pexels.com/photos/16907554/pexels-photo-16907554/free-photo-of-girl-holding-up-a-ukulele.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+        background-size: cover;
+        background-position: center;
+        width: 47%;
+        height: 30vw;
+        border-radius: 1vw;
+        box-shadow: 0.5vw 0.5vw 0.5vw rgba(0, 0, 0, 0.5);
+      }
+
+      .two{
+        background-image: url('https://images.pexels.com/photos/18779079/pexels-photo-18779079/free-photo-of-a-woman-kneeling-on-the-water-with-her-hands-in-the-air.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+        background-size: cover;
+        background-position: center;
+        width: 47%;
+        height: 30vw;
+        border-radius: 1vw;
+        box-shadow: 0.5vw 0.5vw 0.5vw rgba(0, 0, 0, 0.5);
+      }
+
+      .three{
+        background-image: url('https://images.pexels.com/photos/18540855/pexels-photo-18540855/free-photo-of-woman-on-a-beach-standing-and-holding-a-chair.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+        background-size: cover;
+        background-position: center;
+        width: 47%;
+        height: 30vw;
+        border-radius: 1vw;
+        box-shadow: 0.5vw 0.5vw 0.5vw rgba(0, 0, 0, 0.5);
+      }
+
+      .four{
+        background-image: url('https://images.pexels.com/photos/18696169/pexels-photo-18696169/free-photo-of-a-woman-in-a-green-dress-stands-on-a-balcony.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+        background-size: cover;
+        background-position: center;
+        width: 47%;
+        height: 30vw;
+        border-radius: 1vw;
+        box-shadow: 0.5vw 0.5vw 0.5vw rgba(0, 0, 0, 0.5);
+      }
+
+      .one:hover, .two:hover, .three:hover, .four:hover{
+        box-shadow: 0.5vw 0.5vw 0.7vw rgb(62, 117, 220);
+      }
+      .one-parent{
+        display: flex;
+        justify-content: space-around;
+        padding: 1.5vw;
+      }
+
+      .two-parent{
+        display: flex;
+        justify-content: space-around;
+        padding: 1.5vw;
+      }
+
+      h1{
+        font-size: 4vw;
+        font-weight: 500;
+        color:rgb(62, 117, 220);
+      }
+
+      p{
+        font-size: 2vw;
+        text-align: justify;
+        margin-top: 2vw;
+        line-height: 4vw;
+      }
+
+      #target1{
+        margin-top: 4vw;
+      }
+
+      #target2{
+        margin-top: 4vw;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-logo"></div>
+      <div class="nav-button">
+        <li>Home</li>
+        <li>
+            <a href="#target1">About us</a>
+        </li>
+        <li>
+          <a href="#target2">Contact us</a>
+      </li>
+      </div>
+    </nav>
+
+    <main>   
+      <!-- In a webpage, if we want to go in a specific location with achor tag -->
+      <div>
+        <div class="one-parent">
+          <div class="one"></div>
+          <div class="two"></div>
+        </div>
+        <div class="two-parent">
+          <div class="three"></div>
+          <div class="four"></div>
+        </div>
+      </div>
+
+      <section>
+        <div id="target1">
+          <h1>About Us</h1>
+          <div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit alias numquam accusamus praesentium, sunt soluta est eligendi nihil ducimus. Dolore esse laborum ipsam sint tempore porro ullam saepe quae voluptatem totam, aut, sapiente accusantium consequuntur quibusdam voluptatibus, ea dolorem vero necessitatibus? Illum quidem nam natus unde sed maiores consequuntur pariatur minima fuga ipsam! Exercitationem consequatur quia deleniti itaque praesentium. Ipsa necessitatibus quae recusandae obcaecati molestiae suscipit unde temporibus sunt, molestias distinctio illum quos, hic commodi ad iusto ratione voluptas architecto assumenda facilis dolore vel ducimus tempore dolorum. Corporis debitis quidem omnis, molestiae soluta illo voluptatum nihil esse asperiores. Dolorum amet quae ipsam similique dolore ipsa at molestiae delectus odio maiores rem voluptatibus recusandae accusamus temporibus cumque voluptatem dolorem, consequuntur ab eum mollitia nihil. Provident, esse. Error tenetur accusantium voluptate incidunt voluptatibus non dolores vitae quo, tempore, reprehenderit animi doloremque? Quo magni quos nulla cumque itaque recusandae sint beatae totam similique assumenda illum atque velit et sequi debitis ipsa minus, sunt odio repellendus iusto. At facilis quaerat fugiat exercitationem sed. Facilis voluptate eius porro praesentium sed commodi laudantium. Amet tempore adipisci ex odit quas aperiam, reprehenderit veritatis praesentium magnam quisquam sunt itaque autem deserunt illo distinctio porro quidem, molestias qui id.</p>
+          </div>
+        </div>
+  
+        <div id="target2">
+          <h1>Contact Us</h1>
+          <div>
+            <p>Name : Pranjal Gogoi</p>
+            <p>Position : CEO</p>
+            <p>Mobile No. : 7086676284</p>
+            <p>Gmail : gogoipranjal2022@gmail.com</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+<!-- We use id selector less for styling pupose, it has lot's of other uses. 
+eg: 1.In form, we use id to connect with the label element
+    2.In a webpage, if we want to go in a specific location with achor tag, see above code-->

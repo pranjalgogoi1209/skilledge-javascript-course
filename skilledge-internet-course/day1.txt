@@ -1,0 +1,71 @@
+*INTERNET:-- {Inter connection of computers}
+=A global network of networks.(It's just a bunch of connected computers)
+{A bunch of computers connected to each other with routers}
+
+*The internet is the infrastructure that carries things like:
+1.email
+2.the web 
+3.file sharing
+4.online gaming 
+5.streaming services
+
+*THE INTERNET:
+Global network of interconnected computers that communicate via IP/TCP . Networks of Networks
+
+*THE WEB:
+The world wide web is on information system where documents and others resources are available over the Internet.Documents are transferred via HTTP
+
+*HTTP REQUESTS:
+1.Foundation of communication on the world wide web
+2.Request-> I would like this information please
+3."Hyper text transfer protocol"
+4.Response->Ok, here you go!
+
+*SERVER:
+Server is a computer* which  listens to your request and respond whatever you request. 
+
+*WEB SERVER:
+A computer* that can satisfy requests on the web respond you on the web.
+browser is a client
+eg:
+google = web server = always respond information
+chrome = client = always ask for information
+
+*HTML: Structure of  a webpage
+
+*CSS: Styling of the webpage
+
+*JAVASCRIPT: Used to make the webpage dynamic
+
+*STATIC WEBPAGE: A normal webpage,Which not changing content with time. eg: Berkshire Hathway inc
+
+*DYNAMIC WEBPAGE: A webpage, where content of the webpage is changable. eg:
+timesofindia
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

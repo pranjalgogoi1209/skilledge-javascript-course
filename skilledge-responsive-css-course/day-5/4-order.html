@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ORDER</title>
+    <style>
+      .container {
+        border: 5px solid black;
+        height: 80vh;
+        text-align: center;
+        font-size: 1.5rem;
+        display: flex;
+      }
+      .box {
+        padding: 8px;
+      }
+      .one {
+        background-color: aqua;
+        order: 1;
+        /* Every element's default order value is 0 */
+      }
+      .two {
+        background-color: red;
+      }
+      .three {
+        background-color: greenyellow;
+      }
+      .four {
+        background-color: purple;
+      }
+      .five {
+        background-color: orange;
+        order: 2;
+      }
+      .six {
+        background-color: yellow;
+        order: 3;
+      }
+      .seven {
+        background-color: blue;
+        order: -5;
+      }
+      .eight {
+        background-color: violet;
+      }
+      .nine {
+        background-color: orangered;
+      }
+      .ten {
+        background-color: skyblue;
+        order: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box one">One</div>
+      <div class="box two">Two</div>
+      <div class="box three">Three</div>
+      <div class="box four">Four</div>
+      <div class="box five">Five</div>
+      <div class="box six">Six</div>
+      <div class="box seven">Seven</div>
+      <div class="box eight">Eight</div>
+      <div class="box nine">Nine</div>
+      <div class="box ten">Ten</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INTERNAL CSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+     nav{
+      display: flex;
+      justify-content: space-between;
+      background-color: black;
+      padding: 10px;
+     }
+     .div1{
+      background-image: url('https://th.bing.com/th?id=OIF.OHg%2bXqEw4LSA5IuFCmT6TQ&pid=ImgDet&rs=1');
+      background-size: cover;
+      background-position: center;
+      width: 10vw;
+      height: 10vw;
+     }
+     .div2{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border: 2px solid black;
+      gap: 5vw;
+     }
+     .div2 a{
+      text-decoration: none;
+      font-size: 3vw;
+      color : white;
+     }
+     .fa-solid{
+      display: none;
+      color: white;
+     }
+     @media (max-width:600px) {
+      .div2{
+        display: none;
+      }
+      .fa-solid{
+        display: flex;
+        align-items: center;
+        font-size: 7vw;
+      }
+     }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="div1"></div>
+      <div class="div2">
+        <a href="/">Home</a>
+        <a href="/">About</a>
+        <a href="/">Contact Us</a>
+      </div>
+      <i class="fa-solid fa-bars-staggered"></i>
+    </nav>
+  </body>
+</html>

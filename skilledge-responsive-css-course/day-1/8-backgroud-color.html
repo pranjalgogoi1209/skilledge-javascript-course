@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BACKGROUND COLOR</title>
+    <style>
+      *{
+        font-family: poppins;
+      }
+
+      body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7vw;
+      }
+
+      .color{
+        width: 30vw;
+        height: 30vw;
+        border: 0.2vw solid black;
+        border-radius: 2vw;
+        box-shadow: 0.3vw 0.3vw 0.5vw rgba(0, 0, 0.5);
+      }
+
+      .btn{
+        display: flex;
+        gap: 2vw;
+      }
+
+      button{
+        padding: 1vw;
+        border-radius: 1vw;
+        font-size: 2vw;
+        font-weight: 600;
+        color: white;
+        cursor: pointer;
+        border: none;
+      }
+
+      .red{
+        background-color: red;
+      }
+
+      .blue{
+        background-color: blue;
+      }
+
+      .green{
+        background-color: green;
+      }
+
+      
+      @media (max-width:610px) {
+      body{
+        gap: 12vw;
+      }
+
+      .color{
+        width: 40vw;
+        height: 40vw;
+        box-shadow: 0.5vw 0.5vw 0.7vw rgba(0, 0, 0.5);
+      }
+
+      .btn{
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+      }
+
+      .red, .blue, .green{
+        width: 40vw;
+        height: 10vw;
+        border-radius: 4vw;
+        font-size: 4vw;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="color"></div>
+    <div class="btn">
+      <button class="red">Change To Red</button>
+      <button class="blue">Change To Blue</button>
+      <button class="green">Change To Green</button>
+    </div>
+
+
+
+
+    <script>
+      const div = document.querySelector('div')
+      const red = document.querySelector('.red')
+
+      red.addEventListener('click', () => {
+        console.log(div);
+        div.style.backgroundColor = 'red'
+      })
+
+      red.nextElementSibling.addEventListener('click', () => {
+        console.log(div);
+        div.style.backgroundColor = 'blue'
+      })
+
+      red.nextElementSibling.nextElementSibling.addEventListener('click', () => {
+        console.log(div);
+        div.style.backgroundColor = 'green'
+      })
+    </script>
+  </body>
+</html>

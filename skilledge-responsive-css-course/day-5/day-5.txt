@@ -1,0 +1,39 @@
+1.If we give height to the container, then all the elements will take the height of the container.
+2.If we don't give height to the container, and give height to an element, then all the elements take height of that particular element.
+3.If we don't give height to the container, and give different height to three different elements , then other elements wil take the height of the longest height element.
+4.If we give height to the container, bur if we specify any element with height , then that element will take the height of his own.
+
+
+
+
+IN ROW:
+MAIN AXIS:
+X axis is MAIN axis
+JUSTIFY-CONTENT:-----
+1.flex-start
+2.flex-end
+3.center
+4.space-between
+5.space-around
+6.space-evenly
+This are for main axis in a row, it means X axis
+
+CROSS AXIS:
+Y axis is CROSS axis
+*We use align-items , when we want to add property in the container, for all the items.
+*We use align-self, when we want to add property in items, for only one specific item.
+ALIGN-ITEMS:
+1.flex-start
+2.flex-end
+3.center
+4.baseline:when we increase size of an item, to adjust that increase item , we use baseline 
+ALIGN-SELF:
+1.flex-start
+2.flex-end
+3.center
+
+
+IN COLUMN: 
+Y axis is MAIN axis
+X axis is CROSS axis
+

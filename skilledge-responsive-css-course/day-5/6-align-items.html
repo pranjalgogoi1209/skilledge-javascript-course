@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALIGN-ITEMS</title>
+    <style>
+      .container {
+        border: 5px solid black;
+        height: 80vh;
+        text-align: center;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: flex-start;
+        align-items: flex-end;
+        align-items: center;
+        align-items: baseline;
+        /* Below code is overwritting the above code */
+        /* align-items written in the container AND it works only for row, Cross axis*/
+      }
+      .box {
+        padding: 8px;
+      }
+      .one {
+        background-color: aqua;
+        font-size: 2rem;
+      }
+      .two {
+        background-color: red;
+        font-size: 2.5rem;
+      }
+      .three {
+        background-color: greenyellow;
+        font-size: 3rem;
+      }
+      .four {
+        background-color: purple;
+      }
+      .five {
+        background-color: orange;
+      }
+      .six {
+        background-color: yellow;
+      }
+      .seven {
+        background-color: blue;
+      }
+      .eight {
+        background-color: violet;
+      }
+      .nine {
+        background-color: orangered;
+      }
+      .ten {
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box one">One</div>
+      <div class="box two">Two</div>
+      <div class="box three">Three</div>
+      <div class="box four">Four</div>
+      <div class="box five">Five</div>
+      <div class="box six">Six</div>
+      <div class="box seven">Seven</div>
+      <div class="box eight">Eight</div>
+      <div class="box nine">Nine</div>
+      <div class="box ten">Ten</div>
+    </div>
+  </body>
+</html>

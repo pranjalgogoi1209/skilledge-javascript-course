@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLEX</title>
+    <style>
+      .container {
+        border: 5px solid black;
+        height: 80vh;
+        text-align: center;
+        font-size: 1.5rem;
+        display: flex;
+      }
+      .box {
+        padding: 8px;
+        /* flex: 1; */
+        /* To distribute the rest space equally with every element */
+      }
+      .one {
+        background-color: aqua;
+        flex: 1;
+        /* It is use to take the rest space
+        If we add flex value to different items , then items will share the rest space according to the given value */
+      }
+      .two {
+        background-color: red;
+        flex: 2;
+      }
+      .three {
+        background-color: greenyellow;
+        flex: 3;
+      }
+      .four {
+        background-color: purple;
+        flex: 4;
+      }
+      .five {
+        background-color: orange;
+      }
+      .six {
+        background-color: yellow;
+      }
+      .seven {
+        background-color: blue;
+      }
+      .eight {
+        background-color: violet;
+      }
+      .nine {
+        background-color: orangered;
+      }
+      .ten {
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box one">One</div>
+      <div class="box two">Two</div>
+      <div class="box three">Three</div>
+      <div class="box four">Four</div>
+      <div class="box five">Five</div>
+      <div class="box six">Six</div>
+      <div class="box seven">Seven</div>
+      <div class="box eight">Eight</div>
+      <div class="box nine">Nine</div>
+      <div class="box ten">Ten</div>
+    </div>
+  </body>
+</html>

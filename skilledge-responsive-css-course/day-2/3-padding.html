@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PADDING</title>
+    <style>
+      .outside{
+        height: 40vh;
+        border: 0.5vw solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .inside{
+        border: 0.5vw solid black;
+        height: 20vh;
+        width: 20vh;
+        background-color: aquamarine;
+        padding: 2vw;
+        /* padding: 2vw 2vw 2vw 0; */
+        padding-left: 0;
+      }
+      p {
+        padding-top: 5px;
+        padding-right: 10px;
+        padding-left: 5px;
+        padding-bottom: 15px;
+        background-color: pink;
+      }
+      h3 {
+        /* For same value on all the side */
+        padding: 5px;
+      }
+      h2 {
+        /* For same value on opposite side,5px for top and bottom, and 10 px for left and right */
+        padding: 5px 10px;
+      }
+      h1 {
+        /* for same value on left and right, and different values for top and botttom */
+        padding: 10px 5px 22px;
+      }
+      h4 {
+        /* For different values on different side */
+        padding: 5px 6px 7px 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>I have padding</p>
+    <h3>I am h3, and I have padding , for same value on all the side</h3>
+    <h2>I am h2, and I have padding, for same value on opposite side</h2>
+    <h1>
+      I am h1, and I have padding,for same value on left and right, and
+      different values for top and botttom
+    </h1>
+    <h4>I am h4, and I have padding, For different values on different side</h4>
+
+    <div class="outside">
+      <div class="inside">Pranjal Gogoi Hoon Main, And Mere Sath Hai KrishNa Yadav</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+# NODE JS : 
+    i. It's use for backend
+    ii. But It has Node Package Manager (NPM)
+    iii. We will use NPM in react js, So we have to install it
+
+# check version of nodejs : 
+    node -v
+
+# CREATE APP
+    npx create-next-app myapp
+
+# create vite app
+    npm create vite@latest
+    npm install  : for node modules
+
+# RUN DEV LOCAL HOST
+    npm run dev
+
+# In future we have to learn type script, it's superset of javascript , but we have to transpile(convert) typescript file to javascript file, bcz browser only understand javascript
+

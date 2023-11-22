@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPECIFICITY</title>
+    <style>
+      /* ID=100, CLASS=10, ELEMENT=1 */
+      /* 0,0,3 = 3 */
+      div ul li {
+        color: salmon;
+      }
+
+      /*  1,1,1 = 111*/
+      .container #example li {
+        color: red;
+      }
+
+      /* 1,0,1 = 101 */
+      #example li{
+        color: blue;
+      }
+
+      /* 0,3,0 = 30 */
+      .container .list .one {
+        color: green;
+      }
+
+      /* HERE SECOND ONE WILL WIN, BECAUSE IT HAS 111 SPECIFICITY */
+    </style>
+  </head>
+  <body>
+    
+    <div class="container">
+      <ul class="list" id="example">
+        <li class="one">I am a list</li>
+        <li class="one">I am a list</li>
+        <li class="one">I am a list</li>
+      </ul>
+    </div>
+
+  </body>
+</html>

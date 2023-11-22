@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DESCENDANT COMBINATOR</title>
+    <style>
+      section main div span p {
+        color: blue;
+      }
+      main p {
+        color: red;
+      }
+      /* specificity: first has 0,0,4 = 4
+                    second one has 0,0,2=2
+                    so the first one wins */
+      section div {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <main>
+        <div>
+          <span>
+            <p>saction,main,div,span,pera</p>
+          </span>
+        </div>
+      </main>
+    </saction>
+  </body>
+</html>

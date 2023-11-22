@@ -1,0 +1,80 @@
+*CSS SPECIFICITY:
+
+1.Inline css always wins. It has more priority.
+2.Universal selector has less priority.
+
+
+0,         0,	              0
+
+ID     CLASS       ELEMENT
+
+--------------------------------------------------------------
+
+1.
+#one {
+	color:red;
+}
+
+specificity is  1,0,0 = 100
+
+2.
+.class{
+	color:red;
+}
+
+specificity is 0,1,0 = 10
+
+3.
+h1{
+	color:red;
+}
+
+specificity is 0,0,1 = 1
+
+
+In this case priority wise = id=100>class=10>element=1
+So id has more priority in this case
+
+--------------------------------------------------------------
+
+1.
+#one #two {
+	color:red;
+}
+
+specificity is  2,0,0 = 200
+
+2.
+.class#one#two{
+	color:red;
+}
+
+specificity is 2,1,0 = 210
+
+3.
+h1 .class #id1 #id2{
+	color:red;
+}
+
+specificity is 2,1,1 = 211
+
+
+In this case priority wise = last one =211>middle one=210>first one=200
+So last one has more priority in this case
+
+--------------------------------------------------------------------------------------
+
+SHORTCUT OF MAKING DIV:
+
+.container>ul.list#example>li*3
+
+that means:
+
+
+<div class="container">
+	<ul class="list" id="example">
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>

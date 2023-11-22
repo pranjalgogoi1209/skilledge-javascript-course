@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .common{
+            height : 100px;
+        }
+        .left{
+            background-color : green;
+            border : 2px solid white;
+        }
+        .right{
+            background-color : red;
+            border : 2px solid white;
+        }
+        .middle{
+            display : flex;
+        }
+        .middle_left{
+
+            width : 70%;
+        }
+        .middle_left_up{
+            display: flex;
+            border : 2px solid white;
+        }
+        .middle_left_down{
+            background-color: pink;
+            border : 2px solid white;
+        }
+        .one{
+            flex : 1;
+            background-color: darkblue;
+            border : 2px solid white;
+        }
+        .two{
+            flex : 1;
+            background-color: skyblue;
+            border : 2px solid white;
+        }
+        .three{
+            flex : 1;
+            background-color: orange;
+            border : 2px solid white;
+        }
+        .middle_right{
+            border : 2px solid white;
+            width : 30%;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="common left"></div>
+            <div class="middle">
+                <div class="middle_left">
+                    <div class="middle_left_up">
+                        <div class="common one"></div>
+                        <div class="common two"></div>
+                        <div class="common three"></div>
+                    </div>
+                    <div class="common middle_left_down">
+                    </div>
+                </div>
+                <div class="middle_right"></div>
+            <div></div>
+        </div>
+        <div class="common right"></div>
+    </div>
+</body>
+</html>

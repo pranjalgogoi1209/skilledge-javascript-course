@@ -1,0 +1,15 @@
+LIST
+1.Ordered LIST
+2.Unordered LIST
+3.Defination LIST
+    dt: defination term
+    dd: defination description 
+
+*SEMANTIC ELEMENTS
+section
+main
+header
+footer
+nav
+article
+aside

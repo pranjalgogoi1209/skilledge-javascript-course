@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ELEMENT SELECTOR</title>
+    <style>
+      body{
+        background-color: skyblue;
+      }
+
+      div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5vw;
+        justify-content: space-around;
+        gap: 2vw;
+      }
+
+      h1{
+        font-size: 4vw;
+        font-weight: 500;
+        text-shadow: 0.2vw 0.2vw 0.2vw rgba(0, 0, 0, 0.5);
+      }
+
+      p{
+        font-size: 2vw;
+        text-align: center;
+      }
+
+      span{
+        font-weight: 700;
+      }
+
+      button{
+        font-size: 2vw;
+        padding: 1vw;
+        width: 16vw;
+        border-radius: 1vw;
+        background-color: crimson;
+        color: white;
+        cursor: pointer;
+        border: none;
+      }
+
+      button:hover{
+        background-color: rgb(222, 112, 134);
+      }
+
+      @media (max-width:610px) {
+        div{
+        padding: 10vw;
+        gap: 6vw;
+      }
+
+      h1{
+        text-align: center;
+        font-size: 6vw;
+        text-shadow: 0.3vw 0.3vw 0.3vw rgba(0, 0, 0, 0.5);
+      }
+
+      p{
+        font-size: 3.5vw;
+        text-align: center;
+      }
+
+      button{
+        font-size: 4vw;
+        padding: 2vw;
+        width: 32vw;
+        border-radius: 2vw;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Learning Responsive Css</h1>
+      <p>Lorem ipsum dolor sit amet consectetur <span>Pranjal Gogoi</span> adipisicing elit. Quis dignissimos harum tempora!</p>
+      <button>Next</button>
+    </div>
+  </body>
+</html>

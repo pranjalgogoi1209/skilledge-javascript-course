@@ -1,0 +1,47 @@
+#HTML is not a programming language, It's a markup language. In HTML lot's of elements are there, every elements work to show something on the webpage.
+
+#Extension of HTML is .html or .htm
+
+#Convention : Set of rules every programmer agreed to accept and follow in a programming language.
+
+
+#In HTML , this is a convention to write the file as index.html
+
+
+#HTML ELEMENTS/TAGS:
+
+Basic building block of a html webpage
+
+
+#HTML STRUCTURE:
+
+<!DOCTYPE html>
+<html>
+ <head></head>
+ <body></body>
+</html>
+
+
+*
+<p>text1		text2</p>
+{browser will remove the extra space between text1 and text2, for extra space, we have to
+use &nbsp, as much as we want}
+
+*
+<p>text1
+      text2</p>
+{Browser will remove the new line here, for new line we have to use <br/> tag. }
+
+
+#
+*BLOCK LEVEL ELEMENTS: 
+      Which elements have a new line feature.
+            eg: pera tag, h1,h2,....h6,div
+            
+*INLINE ELEMENTS: 
+      Which elements do not have a new line feature.
+            eg: strong tag, i tag, sup, sub, ins, del,span, mark
+
+
+#DIV and SPAN:
+      div and span are use for grouping , But div is a block level element and span is an inline element

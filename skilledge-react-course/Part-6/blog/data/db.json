@@ -1,0 +1,28 @@
+{
+    "blogs" : [
+        {
+            "title" : "book1", 
+            "body" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, facilis deleniti laudantium et, architecto sed, commodi iusto doloremque obcaecati corrupti magnam rerum? Recusandae in quia ea nisi, quos aspernatur velit.", 
+            "author" : "pranjal gogoi", 
+            "id" : 1
+        },
+        {
+            "title" : "book2", 
+            "body" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, facilis deleniti laudantium et, architecto sed, commodi iusto doloremque obcaecati corrupti magnam rerum?", 
+            "author" : "krishna yadav", 
+            "id" : 2
+        },
+        {
+            "title" : "book3", 
+            "body" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, facilis deleniti laudantium et, architecto sed, commodi iusto doloremque obcaecati corrupti magnam rerum? Recusandae in quia ea nisi, quos", 
+            "author" : "pranjal gogoi", 
+            "id" : 3
+        },
+        {
+            "title" : "book4", 
+            "body" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, facilis deleniti laudantium et, architecto sed, commodi iusto doloremque obcaecati corrupti magnam rerum? Recusandae in quia ea nisi, quos", 
+            "author" : "rahul singh", 
+            "id" : 4
+        }
+    ]
+}

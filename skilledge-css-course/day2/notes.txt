@@ -1,0 +1,54 @@
+*USER AGENT:
+    User Agent is a software which runs the website on the browser
+    User agent of chrome gives default margin to any tag like <p>
+
+*CASCADING:
+    Cascading means up to down. It means CSS always go up to down. if we put different property for same element, 
+    then element will take the property which is on down. 
+
+*DESCENDANT COMBINATOR:
+    If we want to target an element under another element 
+    eg: h1 p{
+        color:red;
+    }
+    here , p is descendant of h1
+
+    html page:
+    <h1>
+        <span>
+            <p>hi</p>
+        </span>
+    </h1>
+
+*CHILD COMBINATOR:
+    If we want to target an element which is  under an element , and it is a direct CHILD
+    eg: h1<p{
+        color:red;
+    }
+
+    html page:
+    <h1>
+        <p>Hi</p>
+    </h1>
+
+*ADJACENT SIBLING COMBINATOR:
+    we can use one element if  element is  after  the sibling one
+    eg:
+    <p>Hi<p/>
+    <h1>hi2</h1> {Only this will be change}
+    <h1>hi3</h1>
+
+    p+h1{
+        color:red;
+    }
+
+*GENERAL SIBLING COMBINATOR:
+    we can use multiple elements if they are  after the sibling one 
+     eg:
+    <p>Hi<p/>
+    <h1>hi2<h1/>
+    <h1>hi3<h1/>
+
+    p~h1{
+        color:red;
+    }

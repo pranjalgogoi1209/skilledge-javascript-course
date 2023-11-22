@@ -1,0 +1,46 @@
+Pseudo-classes
+A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). For example, :hover can be used to change a button's color when the user's pointer hovers over it.
+
+/* Any button over which the user's pointer is hovering */
+button:hover {
+  color: blue;
+}
+
+*We have two types of pseudo class:----
+1.Dynamic . eg: hover
+2.Advanced structural . eg: parent child relationship
+
+*User action pseudo-classes/DYNAMIC PSEUDO CLASS
+=These pseudo-classes require some interaction by the user in order for them to apply, such as holding a mouse pointer over an element.
+eg: 
+:hover
+Matches when a user designates an item with a pointing device, for example holding the mouse pointer over it.
+
+:active
+Matches when an item is being activated by the user, for example clicked on or hold the click button .
+
+:focus
+Matches when an element has focus.
+
+:focus-visible
+Matches when an element has focus and the user agent identifies that the element should be visibly focused.
+
+:focus-within
+Matches an element to which :focus applies, plus any element that has a descendant to which :focus applies.
+
+
+DISPLAY PROPERTY:
+i)INLINE
+    *Take the width of the content
+    *We can not add height and width in inline element
+    *Does not start with a new line, It stays in same line
+    *eg: span,a
+ii)BLOCK: 
+    *Take entire width of the parent element or webpage by default 
+    *We can add height and width in block level element 
+    *Start with a new line by default
+    *eg: p,h1,div,article
+ii)INLINE-BLOCK: 
+    *Take the width of the content by default
+    *Does not start with a new line, It stays in same line
+    *We can add height and widht in inline-block level element

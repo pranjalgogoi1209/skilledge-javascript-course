@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BLOCK LEVEL TO INLINE</title>
+    <style>
+      article {
+        border: 5px solid pink;
+        padding: 10px;
+        height: 200px;
+      }
+      p,
+      div,
+      h4 {
+        display: inline;
+        border: 3px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <p>Hi, I am a block level element , changing to inline element</p>
+      <div>Hi, I am a block level element , changing to inline element</div>
+      <h4>Hi, I am a block level element , changing to inline element</h4>
+    </article>
+  </body>
+</html>
