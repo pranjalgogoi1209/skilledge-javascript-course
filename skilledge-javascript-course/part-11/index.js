@@ -76,11 +76,11 @@ let user = {
 };
 
 // array of keys
-console.log(Object.keys(user));
+console.log(Object.keys(user)); // [ 'a', 'b', 'c' ]
 // array of values
-console.log(Object.values(user));
+console.log(Object.values(user)); // [ 1, 2, 3 ]
 // array of array
-console.log(Object.entries(user));
+console.log(Object.entries(user)); // [ [ 'a', 1 ], [ 'b', 2 ], [ 'c', 3 ] ]
 
 console.log(user);
 
