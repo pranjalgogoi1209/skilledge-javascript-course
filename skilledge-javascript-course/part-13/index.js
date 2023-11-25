@@ -80,66 +80,86 @@ function superHero() {
 }
 superHero();
 
-// // # ANNONYMUS FUNCTION EXPRESSION
-// console.log('----'.repeat(3), 'ANNONYMUS FUCTION EXPRESSION', '----'.repeat(3));
+// # ANNONYMUS FUNCTION EXPRESSION
+console.log("----".repeat(3), "ANNONYMUS FUCTION EXPRESSION", "----".repeat(3));
 
-// const myfunc = function(){
-//     console.log('This is my func - function expression');
-// }
+const myfunc = function () {
+  console.log("This is my func - function expression");
+};
+myfunc();
 
-// myfunc();
+// METHOD
+const obj = {
+  name: "krishna",
+  age: 27,
+  myfunc: function (pera) {
+    console.log(pera);
+  },
+};
 
-// // # FUNCTION AS VALUES
-// console.log('----'.repeat(3), 'FUCTION AS VALUES', '----'.repeat(3));
+obj.myfunc("hi i am object function");
 
-// const add = function(x, y){
-//     return x + y;
-// }
-// const sub = function(x, y){
-//     return x - y;
-// }
-// function multi(x, y){
-//     return x * y;
-// }
-// const divide = function(x, y){
-//     return x / y;
-// }
+// # FUNCTION AS VALUES
+console.log("----".repeat(3), "FUCTION AS VALUES", "----".repeat(3));
 
-// // array
-// const operations = [add, sub, multi, divide];   // function as values
-// for(let opera of operations){
-//     console.log(opera(2, 3));
-// }
+const add = function (x, y) {
+  return x + y;
+};
 
-// // object
-// let obj = {
-//     addSomething : add
-// }
-// console.log(obj.addSomething(5,10));
+const sub = function (x, y) {
+  return x - y;
+};
 
-// // # FUNCTION AS ARGUMENTS : call back function
-// console.log('----'.repeat(3), 'FUCTION AS ARGUMENTS', '----'.repeat(3));
+function multi(x, y) {
+  return x * y;
+}
 
-// const userName = function(func2){
-//     console.log(func2('PRANJAL'));
-// }
+const divide = function (x, y) {
+  return x / y;
+};
 
-// const func = function(name){
-//     return 'Name : '+ name;
-// }
+const log = function (string) {
+  console.log(`Hi, I am ${string}`);
+};
 
-// userName(func)
+// array
+const operations = [add, sub, multi, divide]; // function as values
+for (let opera of operations) {
+  console.log(opera(2, 3));
+}
 
-// // ANOTHER EG:
-// function greetAgain(func, obj){
-//     console.log(`Congratulations, ${func()}`);
-//     console.log(`Congratulations, ${obj.name}`);
-// }
+// object
+let obj2 = {
+  addSomething: log,
+};
+// console.log(obj2.addSomething(5, 10));
+obj2.addSomething("pranjal");
 
-// let person = function(){
-//     return 'Pranjal Gogoi';
-// };
-// let userObject = {
-//     name : 'Goutam Medhi',
-// };
-// greetAgain(person, userObject);
+// # FUNCTION AS ARGUMENTS : call back function
+console.log("----".repeat(3), "FUCTION AS ARGUMENTS", "----".repeat(3));
+
+const func2 = function (name) {
+  return `Name: ${name}`;
+};
+
+const func1 = function (func2) {
+  return `FUNCTION 1 KE ANDAR => ${func2("KRISHNA")}`;
+};
+
+console.log(func1(func2));
+
+// ANOTHER EG:
+function greetAgain(func, obj) {
+  console.log(`Congratulations, ${func()}`);
+  console.log(`Congratulations, ${obj.name}`);
+}
+
+let person = function () {
+  return "Pranjal Gogoi";
+};
+
+let userObject = {
+  name: "Goutam Medhi",
+};
+
+greetAgain(person, userObject);
