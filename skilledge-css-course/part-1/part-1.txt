@@ -76,22 +76,3 @@ DIFFERECE BETWEEN ID AND Class
 
 
 We use   <meta charset="UTF-8" />  to let browser display all the languages in the world supports by utf-8
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
