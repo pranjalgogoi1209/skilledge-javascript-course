@@ -104,11 +104,20 @@ books.forEach(function (item, index) {
 });
 
 // MAP METHOD
-let array = [10, 20, 30];
-let newArray = array.map(function (number) {
-  return number ** 2;
+console.log("----".repeat(3), "MAP", "----".repeat(3));
+
+const array = [10, 20, 30];
+
+/* let newArray = [];
+array.forEach(item => {
+  newArray.push(item);
+}); */
+
+const newArray = array.map(item => {
+  return item;
 });
-console.log(newArray);
+
+console.log(newArray.reverse());
 
 // MAP METHOD IN ARRAY OF OBJECTS
 console.log(
