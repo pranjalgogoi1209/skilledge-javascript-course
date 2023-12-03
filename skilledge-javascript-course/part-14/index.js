@@ -113,7 +113,7 @@ array.forEach(item => {
   newArray.push(item);
 }); */
 
-const newArray = array.map(item => {
+const newArray = array.map(function (item) {
   return item;
 });
 
@@ -143,13 +143,20 @@ let newKitabe = kitabe.map(function (i) {
 });
 console.log(newKitabe);
 
-// NON ARROW FUNCTION
-console.log("----".repeat(3), "NON ARROW FUNCTION", "----".repeat(3));
+/* // normal
+function name () {
 
-let marvelNormal = function () {
-  console.log("Multiverse in normal fuction");
-};
-marvelNormal();
+}
+
+// expression
+const name = function() {
+
+}
+
+// arrow
+const name = () => {
+
+} */
 
 // ARROW FUNCTION
 console.log("----".repeat(3), "ARROW FUNCTION", "----".repeat(3));
@@ -158,6 +165,7 @@ let marvelArrow = () => {
   console.log("Multiverse in arrow function");
 };
 marvelArrow();
+
 // MAP METHOD WITH ARROW FUNCTION
 console.log(
   "----".repeat(3),
@@ -175,6 +183,7 @@ console.log(newKitabeArrow);
 console.log("----".repeat(3), "PROBLEM 1", "----".repeat(3));
 
 let numbers = [10, 11, 12, 13];
+
 let isEven = numbers.map(number => {
   return number % 2 == 0;
 });
@@ -197,7 +206,7 @@ console.log(
   "----".repeat(1)
 );
 
-let obj = () => ({ name: "Pranjal" });
+let obj = () => ({ name: "Pranjal", age: 23 });
 console.log(obj());
 
 // RETURNING IN ONE STATEMENT USING MAP METHOD WITH ARROW FUNCTION
@@ -208,6 +217,7 @@ console.log(
 );
 
 let arr = [10, 20, 30, 40, 50];
+
 let newArr = arr.map(num => num * 10);
 console.log(newArr);
 
@@ -220,9 +230,15 @@ let movies = [
   "Mr. and Mrs. Gogoi",
   "The Hero",
   "Mrs. Bheede",
+  "ven",
 ];
-let result = movies.find(name => name.includes("Mr."));
+
+let result = movies.find(name => name.includes("ven"));
 console.log(result);
+
+let hanji = [1, 2, 34, 5, 6, 68];
+let hanjiChai = hanji.find(num => num > 4);
+console.log(hanjiChai);
 
 // PROBLEM 2
 console.log("----".repeat(3), "PROBLEM 2", "----".repeat(3));
@@ -255,7 +271,12 @@ let moviesFilter = [
   "Mr. and Mrs. Gogoi",
   "The Hero",
   "Mrs. Bheede",
+  "Mr. Krishna",
 ];
+
+const hi = moviesFilter.filter(name => name.indexOf("Mr.") !== -1);
+console.log(hi);
+
 let newMoviesFilter = moviesFilter.filter(movie => movie.includes("Mrs."));
 console.log(newMoviesFilter);
 
@@ -267,16 +288,19 @@ let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let oddNums = nums.filter(num => num % 2 !== 0);
 console.log(oddNums);
 
+const numA = nums.filter(num => num !== 3);
+console.log(numA);
+
 // SOME METHOD
 console.log("----".repeat(3), "SOME METHOD", "----".repeat(3));
 
 let heroes = ["Thor", "Hulk", "CaptainAmerica", "IronMan"];
-let resultHeroes = heroes.some(hero => hero === "Thor");
+let resultHeroes = heroes.some(hero => hero === "Hulk");
 console.log(resultHeroes);
 
 // EVERY METHOD
 console.log("----".repeat(3), "EVERY METHOD", "----".repeat(3));
 
-let superHeroes = ["Thor", "IronMan", "Thor", "Thor"];
+let superHeroes = ["Thor", "Ironman", "Thor", "Thor"];
 let resultSuperHeroes = superHeroes.every(hero => hero === "Thor");
 console.log(resultSuperHeroes);
