@@ -90,24 +90,25 @@ console.log("----".repeat(3), "REST OPERATOR", "----".repeat(3));
 
 let restOperator = (a, b, ...rest) => {
   console.log(a, b);
-  console.log(a, b, ...rest);
+  console.log(...rest);
 };
 restOperator(1, 2, 3, 4, 5, 6, 7, 8, 9);
 
 // DESTRUCTURING
 console.log("----".repeat(3), "DESTRUCTURING", "----".repeat(3));
 
-let obj = {
-  name: "Pranjal Gogoi",
-  age: 23,
-  skills: ["Html", "Css", "Javascript", "Python"],
+const des = {
+  id: 1,
+  designation: "REACT DEVELOPER",
+  salary: 23000,
 };
-// let name = obj.name;
-// let age = obj.age;
-// let skills = obj.skills;
 
-/* let {name, age, skills} = obj;
-console.log(name, age, skills); */
+/* const id = des.id;
+const designation = des.designation;
+const salary = des.salary; */
+
+const { id, designation, salary } = des;
+console.log(`${id} and ${salary} and ${designation}`);
 
 // DEFAULT VALUE IN DESTRUCTURING : if key:value not present in the object
 console.log(
@@ -115,14 +116,30 @@ console.log(
   "DEFAULT VALUE IN DESTRUCTURING",
   "----".repeat(3)
 );
+
+const obj = {
+  name: "pranjal gogoi",
+  age: 24,
+  skills: [
+    "react",
+    "javascript",
+    "bootstrap",
+    "tailwind",
+    "css3",
+    "html5",
+    "node.js",
+    "express.js",
+    "mongodb",
+  ],
+};
 let { name, age, skills, rating = 5 } = obj;
 console.log(name, age, rating);
 
 // RENAME THE OBJECT KEYS IN DESTRUCTURING
 console.log("----".repeat(3), "RENAME THE OBJECT KEYS", "----".repeat(3));
-let { name: userName, age: newAge, skills: newSkills } = obj;
-console.log(userName, newAge, newSkills);
+// let { name, age, skill } = obj;
+// console.log(userName, newAge, newSkills);
 
 // DEFAULT VALUE AND RENAME OBJECT KEYS IN DESTRUCTURING
-let { nickName: userNickName = "Krishna Yadav" } = obj;
-console.log(userNickName);
+// let { nickName: userNickName = "Krishna Yadav" } = obj;
+// console.log(userNickName);
