@@ -131,15 +131,24 @@ const obj = {
     "express.js",
     "mongodb",
   ],
+  rating: 2,
 };
 let { name, age, skills, rating = 5 } = obj;
 console.log(name, age, rating);
 
 // RENAME THE OBJECT KEYS IN DESTRUCTURING
 console.log("----".repeat(3), "RENAME THE OBJECT KEYS", "----".repeat(3));
-// let { name, age, skill } = obj;
-// console.log(userName, newAge, newSkills);
+
+const newObj = {
+  name1: "Krishna",
+  nickName: "genius",
+  age1: 27,
+};
+const { name1: newName, age1 } = newObj;
+console.log(newName, age1);
+const name1 = "hi";
+console.log(name1);
 
 // DEFAULT VALUE AND RENAME OBJECT KEYS IN DESTRUCTURING
-// let { nickName: userNickName = "Krishna Yadav" } = obj;
-// console.log(userNickName);
+let { nickName: userNickName = "Krishna Yadav" } = newObj;
+console.log(userNickName);
