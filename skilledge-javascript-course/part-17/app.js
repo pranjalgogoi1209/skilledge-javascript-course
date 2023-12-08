@@ -44,5 +44,20 @@ console.log(user.windowObject); // it returns Window object
 
 // # INNER HTML
 console.log("....".repeat(2), "INNER HTML", "....".repeat(2));
-const divId = document.getElementById("div-id");
-console.log(divId);
+
+// first div in html file
+const div = document.getElementById("div-id");
+console.log(div);
+console.log(div.innerHTML);
+div.innerHTML = "<h2>I replaced everything inside div</h2>";
+console.log(div.innerHTML);
+
+// second div in html file
+const div2 = document.getElementById("div2-id");
+console.log(div2.innerHTML);
+
+const span = document.getElementById("span-id");
+setTimeout(() => {
+  span.innerHTML = "Pranjal";
+}, 3000);
+console.log(span);
