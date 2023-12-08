@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body id="body">
-    <div id="divId"></div>
+  </head>
+  <body>
+    <div id="div-id">
+      <p>I AM A PARAGRAPH INSIDE A DIV</p>
+    </div>
+
     <script src="app.js"></script>
-</body>
+    <script>
+      // DOM
+      Window = {
+        html: {
+          head: {
+            meta: {
+              charset: "UTF-8",
+            },
+            meta: {
+              name: "viewport",
+              content: "width=device-width, initial-scale=1.0",
+            },
+            title: {
+              innerHTML: "Document",
+            },
+          },
+          body: {
+            div: {
+              id: "divId",
+            },
+          },
+        },
+      };
+      console.log(Window);
+    </script>
+  </body>
 </html>
