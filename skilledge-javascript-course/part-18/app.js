@@ -1,10 +1,11 @@
 // ## SELECTORS
-// # document.getElementById();
-
+// # GET ELEMENT BY ID
+console.log("***  GET ELEMENT BY ID ***");
 var h1 = document.getElementById("h1_id");
 console.log(h1);
 
-// # document.getElementsByClassName();
+// # GET ELEMENTS BY CLASSNAME
+console.log("*** GET ELEMENTS BY CLASSNAME ***");
 var p = document.getElementsByClassName("new_class"); //html collection
 console.log(p);
 
@@ -15,114 +16,95 @@ for (let i of p) {
   console.log(i);
 }
 
-// # document.getElementsByTagName();
+// # GET ELEMENTS BY TAGNAME
+console.log("*** GET ELEMENTS BY TAGNAME ***");
 var li = document.getElementsByTagName("li");
 console.log(li);
 for (let i of li) {
   console.log(i);
 }
 
-// # document.querySelector();
+// # QUERY SELECTOR
+console.log("*** QUERY SELECTOR ***");
 var qry1 = document.querySelector("#h1_id");
-// var qry2 = document.querySelector(".new_class");
-// var qry3 = document.querySelector("li");
+var qry2 = document.querySelector(".new_class");
+var qry3 = document.querySelector("li");
 console.log(qry1);
-// console.log(qry2);
-// console.log(qry3);
+console.log(qry2);
+console.log(qry3);
 
-// // # document.querySelectorAll();
-// console.log("....".repeat(3), "document.querySelectorAll();", "....".repeat(3));
-
-// // nodelist
-// var qryAll1 = document.querySelectorAll("#h1_id");
-// var qryAll2 = document.querySelectorAll(".new_class");
-// var qryAll3 = document.querySelectorAll("li");
-// console.log(qryAll1);
-// console.log(qryAll2);
-// console.log(qryAll3);
-// console.log(qryAll3[3]);
-// for (let q of qryAll3) {
-//   console.log(q);
-// }
-// console.log(qryAll3);
+// # QUERY SELECTOR ALL
+console.log("*** QUERY SELECTOR ALL ***");
+// nodelist
+var qryAll1 = document.querySelectorAll("#h1_id");
+var qryAll2 = document.querySelectorAll(".new_class");
+var qryAll3 = document.querySelectorAll("li");
+console.log(qryAll1);
+console.log(qryAll2);
+console.log(qryAll3);
+console.log(qryAll3[3]);
+for (let q of qryAll3) {
+  console.log(q);
+}
 
 // // ## TRAVERSING THE DOM
 // // # .children
-// console.log("....".repeat(3), ".children", "....".repeat(3));
+let ul = document.querySelector("ul");
+console.log(ul.children);
 
-// let ul = document.querySelector("ul");
-// console.log(ul.children);
+// # .firstElementChild
+const navbar = document.querySelector("nav");
+console.log(navbar.firstElementChild);
+console.log(navbar.firstElementChild.innerHTML);
+navbar.firstElementChild.innerHTML = "REPLACED BY FLIPKART";
+console.log(navbar.firstElementChild.innerHTML);
 
-// // # .firstElementChild
-// console.log("....".repeat(3), ".firstElementChild", "....".repeat(3));
+// # LAST ELEMENT CHILD
+console.log("*** LAST ELEMENT CHILD ***");
+console.log(navbar.lastElementChild.innerHTML);
+navbar.lastElementChild.innerHTML = "REPLACED BY ABOUT US";
+console.log(navbar.lastElementChild.innerHTML);
 
-// const navbar = document.querySelector("nav");
-// console.log(navbar.firstElementChild);
-// navbar.firstElementChild.innerHTML = "NEW AMAZON";
+// # PARENT ELEMENT
+console.log("*** PARENT ELEMENT ***");
+const h1Id = document.querySelector("#h1_id");
+console.log(h1Id.parentElement);
+console.log(h1Id.parentElement.lastElementChild);
 
-// // # .lastElementChild
-// console.log("....".repeat(3), ".lastElementChild", "....".repeat(3));
+// # PREVIOUS ELEMENT SIBLING
+console.log("*** PREVIOUS ELEMENT SIBLING ***");
 
-// console.log(navbar.lastElementChild);
-// navbar.lastElementChild.innerHTML = "About Us";
+const main1 = document.querySelector("main");
+console.log(main1.previousElementSibling);
+console.log(
+  main1.previousElementSibling.lastElementChild.parentElement.firstElementChild
+);
 
-// // # .parentElement
-// console.log("....".repeat(3), ".parentElement", "....".repeat(3));
+// # NEXT ELEMENT SIBLING
+console.log("*** NEXT ELEMENT SIBLING ***");
+console.log(main1.nextElementSibling);
+console.log(
+  main1.nextElementSibling.previousElementSibling.previousElementSibling
+    .nextElementSibling.firstElementChild
+);
 
-// const h1 = document.querySelector("#h1_id");
-// console.log(h1.parentElement);
-// console.log(h1.parentElement.lastChild);
+// # ANOTHER WAY OF ACCESSING DOM ELEMENT
+console.log("*** ANOTHER WAY OF ACCESSING DOM ELEMENT ***");
+console.log(main1.querySelector("ul"));
+console.log(
+  navbar.firstElementChild.parentElement.nextElementSibling.querySelector("p")
+    .nextElementSibling
+);
 
-// // # .previousElementSibling
-// console.log("....".repeat(3), ".previousElementSibling", "....".repeat(3));
+// # CHECK ATTRIBUTES OF ANY ELEMENT
+console.log("CHECK ATTRIBUTES OF ANY ELEMENT");
+console.log(main1.lastElementChild.attributes);
 
-// const main1 = document.querySelector("main");
-// console.log(main1.previousElementSibling);
-// console.log(
-//   main1.previousElementSibling.lastElementChild.parentElement.firstElementChild
-// );
+// # SET ATTRIBUTES IN ANY ELEMENT
+console.log("SET ATTRIBUTES IN ANY ELEMENT");
 
-// // # .nextElementSibling
-// console.log("....".repeat(3), ".nextElementSibling", "....".repeat(3));
-
-// console.log(main1.nextElementSibling);
-// console.log(
-//   main1.nextElementSibling.previousElementSibling.previousElementSibling
-//     .nextElementSibling.firstElementChild
-// );
-
-// // # another way of grabing element from dom
-// console.log(
-//   "....".repeat(3),
-//   "another way of grabing element from dom",
-//   "....".repeat(3)
-// );
-
-// console.log(main1.querySelector("ul"));
-// console.log(
-//   navbar.firstElementChild.parentElement.nextElementSibling.querySelector("p")
-//     .nextElementSibling
-// );
-
-// // # CHECK ATTRIBUTES OF ANY ELEMENT
-// console.log(
-//   "....".repeat(3),
-//   "CHECK ATTRIBUTES OF ANY ELEMENT",
-//   "....".repeat(3)
-// );
-
-// console.log(main1.lastElementChild.attributes);
-
-// // # SET ATTRIBUTES IN ANY ELEMENT
-// console.log(
-//   "....".repeat(3),
-//   "SET ATTRIBUTES IN ANY ELEMENT",
-//   "....".repeat(3)
-// );
-
-// // inline css
-
-// main1.querySelector(".new_class").setAttribute("style", "color:red"); // inline css
+// inline css
+main1.querySelector(".new_class").setAttribute("style", "color:red");
 
 // main1.querySelector(".new_class").style.fontStyle = "italic"; // inline css
 

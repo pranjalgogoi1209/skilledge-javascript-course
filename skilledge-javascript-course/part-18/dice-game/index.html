@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DICE GAME</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./images/initial-dice.png" height="200" />
+    <button onclick="handleClick()">Scroll</button>
+
+    <script>
+      const img = document.querySelector("img");
+
+      const handleClick = () => {
+        img.setAttribute("src", "./images/animated-dice.gif");
+        setTimeout(() => {
+          const random = ~~(Math.random() * 6) + 1;
+          img.setAttribute("src", `./images/dice-${random}.png`);
+        }, 1000);
+      };
+    </script>
+  </body>
+</html>
