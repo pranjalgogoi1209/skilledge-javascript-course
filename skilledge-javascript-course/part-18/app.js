@@ -43,16 +43,29 @@ console.log(qryAll1);
 console.log(qryAll2);
 console.log(qryAll3);
 console.log(qryAll3[3]);
-for (let q of qryAll3) {
+/* for (let q of qryAll3) {
   console.log(q);
-}
+} */
+qryAll3.forEach(item => {
+  console.log(item, "inside forEach");
+});
+
+// CONVERT NODELIST TO ARRAY
+console.log("***CONVERT NODELIST TO ARRAY***");
+const newArray = Array.from(qryAll3);
+console.log(newArray);
+// or
+const newArray2 = [...qryAll3];
+console.log(newArray2);
 
 // // ## TRAVERSING THE DOM
-// // # .children
+// // # CHILDREN
+console.log("***CHILDREN***");
 let ul = document.querySelector("ul");
 console.log(ul.children);
 
-// # .firstElementChild
+// # FIRST ELEMENT CHILD
+console.log("***FIRST ELEMENT CHILD***");
 const navbar = document.querySelector("nav");
 console.log(navbar.firstElementChild);
 console.log(navbar.firstElementChild.innerHTML);
@@ -60,19 +73,19 @@ navbar.firstElementChild.innerHTML = "REPLACED BY FLIPKART";
 console.log(navbar.firstElementChild.innerHTML);
 
 // # LAST ELEMENT CHILD
-console.log("*** LAST ELEMENT CHILD ***");
+console.log("***LAST ELEMENT CHILD***");
 console.log(navbar.lastElementChild.innerHTML);
 navbar.lastElementChild.innerHTML = "REPLACED BY ABOUT US";
 console.log(navbar.lastElementChild.innerHTML);
 
 // # PARENT ELEMENT
-console.log("*** PARENT ELEMENT ***");
+console.log("***PARENT ELEMENT***");
 const h1Id = document.querySelector("#h1_id");
 console.log(h1Id.parentElement);
 console.log(h1Id.parentElement.lastElementChild);
 
 // # PREVIOUS ELEMENT SIBLING
-console.log("*** PREVIOUS ELEMENT SIBLING ***");
+console.log("***PREVIOUS ELEMENT SIBLING***");
 
 const main1 = document.querySelector("main");
 console.log(main1.previousElementSibling);
@@ -81,7 +94,7 @@ console.log(
 );
 
 // # NEXT ELEMENT SIBLING
-console.log("*** NEXT ELEMENT SIBLING ***");
+console.log("***NEXT ELEMENT SIBLING***");
 console.log(main1.nextElementSibling);
 console.log(
   main1.nextElementSibling.previousElementSibling.previousElementSibling
@@ -102,43 +115,44 @@ console.log(main1.lastElementChild.attributes);
 
 // # SET ATTRIBUTES IN ANY ELEMENT
 console.log("SET ATTRIBUTES IN ANY ELEMENT");
-
 // inline css
 main1.querySelector(".new_class").setAttribute("style", "color:red");
 
-// main1.querySelector(".new_class").style.fontStyle = "italic"; // inline css
+// REAL WORLD EXAMPLE
+const div = document.querySelector(".test");
+const handleClick = () => {
+  div.querySelector("h1").setAttribute("style", "color: red");
+};
 
-// main1.querySelector(".new_class").style.border = "2px solid purple"; // inline css
+main1.querySelector(".new_class").style.fontStyle = "italic"; // inline css
 
-// // main1.querySelector('.new_class').style.background-color='skyblue';  // It will not work
+main1.querySelector(".new_class").style.border = "2px solid purple"; // inline css
 
-// main1.querySelector(".new_class").style.backgroundColor = "skyblue"; // inline css
+// main1.querySelector('.new_class').style.background-color='skyblue';  // It will not work
+
+main1.querySelector(".new_class").style.backgroundColor = "skyblue"; // inline css
 
 // // internal css & external css : It overwrite the previous class
 
-// main1.querySelector(".new_class").setAttribute("class", "test1");
-// main1.querySelector(".test1").setAttribute("class", "test2");
-// main1.querySelector(".new_class").setAttribute("class", "test1");
+main1.querySelector(".new_class").setAttribute("class", "test1");
+main1.querySelector(".test1").setAttribute("class", "test2");
+main1.querySelector(".new_class").setAttribute("class", "test1");
 
-// // # .getAttribute() : CHECK VALUE OF ANY ATTRIBUTE OF AN ELEMENT
-// console.log(
-//   "....".repeat(3),
-//   ".getAttribute() : CHECK VALUE OF ANY ATTRIBUTE OF AN ELEMENT",
-//   "....".repeat(3)
-// );
+// # GET ATTRIBUTE : access the value of that attribute
+console.log("***GET ATTRIBUTE***");
 
-// const img = document.querySelector("img");
-// console.log(img.getAttribute("height"));
-// console.log(img.getAttribute("src"));
-// console.log(img.getAttribute("alt"));
+const img = document.querySelector("img");
+console.log(img.getAttribute("height"));
+console.log(img.getAttribute("src"));
+console.log(img.getAttribute("alt"));
 
-// // # CREATE ELEMENT
-// console.log("....".repeat(3), "CREATE ELEMENT", "....".repeat(3));
+// # CREATE ELEMENT
+console.log("***CREATE ELEMENT***");
 
-// let h2 = document.createElement("h2");
-// console.log(h2);
-// h2.innerText = "Contact Us";
-// navbar.querySelector("div").appendChild(h2);
+let h2 = document.createElement("h2");
+h2.innerText = "Contact Us |";
+console.log(h2);
+navbar.querySelector("div").appendChild(h2);
 
 // // # CREATE TEXT INSIDE AN ELEMENT
 // console.log(
