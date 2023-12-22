@@ -16,15 +16,25 @@
   <body>
     <img src="./images/initial-dice.png" height="200" />
     <button onclick="handleClick()">Scroll</button>
+    <div>Result: <span></span></div>
 
     <script>
       const img = document.querySelector("img");
 
       const handleClick = () => {
         img.setAttribute("src", "./images/animated-dice.gif");
+
+        // if I want 6 everytime
+        /*  let a = 0;
+        while (a !== 6) {
+          var random = ~~(Math.random() * 6) + 1;
+          a = random;
+        } */
+
         setTimeout(() => {
           const random = ~~(Math.random() * 6) + 1;
           img.setAttribute("src", `./images/dice-${random}.png`);
+          document.querySelector("span").innerText = random;
         }, 1000);
       };
     </script>

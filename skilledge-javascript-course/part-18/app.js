@@ -146,40 +146,68 @@ console.log(img.getAttribute("height"));
 console.log(img.getAttribute("src"));
 console.log(img.getAttribute("alt"));
 
-// # CREATE ELEMENT
-console.log("***CREATE ELEMENT***");
+// # CREATE ELEMENT & APPEND CHILD
+console.log("***CREATE ELEMENT & APPEND CHILD***");
 
 let h2 = document.createElement("h2");
 h2.innerText = "Contact Us |";
-console.log(h2);
+h2.style.color = "red";
+h2.style.backgroundColor = "pink";
+h2.style.padding = "2vw";
+
 navbar.querySelector("div").appendChild(h2);
 
-// // # CREATE TEXT INSIDE AN ELEMENT
-// console.log(
-//   "....".repeat(3),
-//   "CREATE TEXT INSIDE AN ELEMENT",
-//   "....".repeat(3)
-// );
+// PRACTICAL EXAMPLE
+const allDetails = [
+  {
+    element: "h2",
+    text: "pranjal",
+    bgColor: "skyblue",
+  },
+  {
+    element: "h2",
+    text: "krishna",
+    bgColor: "yellow",
+  },
+  {
+    element: "h2",
+    text: "rahul",
+    bgColor: "orange",
+  },
+  {
+    element: "h2",
+    text: "ishan",
+    bgColor: "green",
+  },
+  {
+    element: "h2",
+    text: "shivam",
+    bgColor: "purple",
+  },
+];
 
-// const h3 = document.querySelector("article").querySelector("h3");
-// h3.innerText = "I am created using .innerText";
-// console.log(h3);
+const addElement = (element, text, bgColor) => {
+  const newElement = document.createElement(element);
+  newElement.innerText = text;
+  newElement.style.backgroundColor = bgColor;
+  newElement.style.padding = "2vw";
+  document.querySelector("header").appendChild(newElement);
+};
 
-// // # INJECTING CUSTOM CREATED HTML ELEMENT NODE INTO DOM
-// console.log(
-//   "....".repeat(3),
-//   "INJECTING CUSTOM CREATED HTML ELEMENT NODE INTO DOM",
-//   "....".repeat(3)
-// );
+allDetails.forEach(detail => {
+  const { element, text, bgColor } = detail;
+  addElement(element, text, bgColor);
+  // addElement(detail.element, detail.text, detail.bgColor);
+});
 
-// const section = document.querySelector("section");
-// // section.innerHTML = h2; //It will not work, bcz h2 is an element node
+// NOTE
+const section = document.querySelector("section");
+section.innerHTML = h2; //It will not work, bcz h2 is an element node, but if we create h2 and chai with innerText in one line then it will work bcz of scope
+// section.innerHTML = h2.outerHTML;  // it will work
+// section.innerHTML = h2.innerHTML; // it will only put the innerHTML
+// section.appendChild(h2); // it will work
 
-// // // It will work, bcz .innerText is in one line with document.createElement();
-// var h4 = (document.createElement("h4").innerText =
-//   "I am creater .innerText - One line inside section");
-// var h5 = (document.createElement("h5").innerText =
-//   "I am creater .innerText - Two line inside section");
-// section.innerHTML = h4; // It will replace the all html elements inside section tag
-// section.innerHTML = h5;
-// // section.innerHTML = "I am creater .innerText - One line inside section";
+// BECAUSE OF SCOPE, IF WE CREATE ELEMENT AND CHAI WITH INNERTEXT IN ONE LINE THEN WE CAN ADD THAT ELEMENT IN DOM
+var h4 = (document.createElement("h4").innerText =
+  "I am creater .innerText - One line inside section");
+section.innerHTML = h4; // It will replace the all html elements inside section tag
