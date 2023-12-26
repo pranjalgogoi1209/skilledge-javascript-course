@@ -1,9 +1,3 @@
-let tableData = [
-    {Name : 'Pranjal Gogoi', Id : 1804852, Position : 'React Developer'},
-    {Name : 'Krishna Yadav', Id : 1804791, Position : 'Next js Developer'},
-    {Name : 'Rahul Singh', Id : 1804855, Position : 'IPS officer'}
-]
-
 /* let tbody = document.querySelector('tbody');
 tbody.innerHTML = `
     <tr>
@@ -23,7 +17,6 @@ tbody.innerHTML = `
     </tr>
 `; */
 
-
 /* let tbody = document.querySelector('tbody');
 for(let data of tableData){
     tbody.innerHTML = `
@@ -35,14 +28,20 @@ for(let data of tableData){
     `;
 } */
 
+let tableData = [
+  { name: "Pranjal Gogoi", id: 1804852, position: "React Developer" },
+  { name: "Krishna Yadav", id: 1804791, position: "Next js Developer" },
+  { name: "Rahul Singh", id: 1804855, position: "IPS officer" },
+  { name: "Ishan Aggarwal", id: 1804847, position: "App Developer" },
+];
+let tbody = document.querySelector("tbody");
 
-let tbody = document.querySelector('tbody');
-for(let data of tableData){
-    let tr = document.createElement('tr');
-    for(let d in data){
-        let td = document.createElement('td');
-        td.innerText = `${data[d]}`;
-        tr.appendChild(td);
-    }
-    tbody.appendChild(tr);
+for (let data of tableData) {
+  let tr = document.createElement("tr");
+  for (let item in data) {
+    let td = document.createElement("td");
+    td.innerText = data[item];
+    tr.appendChild(td);
+  }
+  tbody.appendChild(tr);
 }
