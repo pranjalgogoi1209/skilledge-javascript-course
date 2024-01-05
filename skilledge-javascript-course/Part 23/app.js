@@ -57,3 +57,5 @@ console.log('...'.repeat(3),'FOCUS EVENT','...'.repeat(3));
 userName.addEventListener('focus',()=>{
     console.log('Event, triggered');
 });
+
+// PREVENT DEFAULT

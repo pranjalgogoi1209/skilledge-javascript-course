@@ -5,8 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      body {
+        border: 1px solid black;
+        height: 100vh;
+      }
       .completed {
         text-decoration: line-through;
+      }
+
+      ol,
+      ul {
+        border: 1px solid black;
+      }
+
+      ol li,
+      ul li {
+        border: 1px solid red;
       }
     </style>
   </head>
@@ -15,7 +29,22 @@
     <ul></ul>
     <button>Add new challenge</button>
     <input type="text" />
+    <ol>
+      <li>list1</li>
+      <li>list2</li>
+      <li>list3</li>
+    </ol>
 
+    <ul id="newUl">
+      <li>UL 1</li>
+      <li>UL 2</li>
+    </ul>
+
+    <form method="get">
+      Name:<input type="text" id="name" /> Age:<input type="text" id="age" />
+      <button type="submit" id="btn">Submit</button>
+    </form>
+    <div class="data"></div>
     <script src="app.js"></script>
   </body>
 </html>

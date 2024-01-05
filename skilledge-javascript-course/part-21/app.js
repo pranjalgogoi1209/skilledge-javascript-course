@@ -39,25 +39,81 @@ btn.addEventListener("click", () => {
   input.value = "";
 });
 
-// // EVENT BUBBLING
-// console.log('...'.repeat(3),'EVENT BUBBLING', '...'.repeat(3));
+// EVENT BUBBLING & STOP PROPAGATION
+console.log("***EVENT BUBBLING***");
+const ol = document.querySelector("ol");
 
-// /* ul.addEventListener('click', function(e){
-//     if(e.target.nodeName==='LI'){
-//         e.target.remove();
-//     }
-// }); */
+// body
+ol.parentElement.addEventListener("click", e => {
+  ol.parentElement.style.backgroundColor = "pink";
+  console.log("hit body");
+});
 
-// // STOP PROPAGATION
-// console.log('...'.repeat(3),'STOP PROPAGATION', '...'.repeat(3));
+// ol
+ol.addEventListener("click", e => {
+  ol.style.backgroundColor = "orange";
+  console.log("hit ol");
+});
 
-// let li = document.querySelectorAll('li');
+// li
+const arr = Array.from(ol.children);
+arr.forEach(li => {
+  li.addEventListener("click", e => {
+    e.stopPropagation();
+    li.style.backgroundColor = "yellow";
+    console.log("hit li");
+  });
+});
 
-// ul.addEventListener('click', function(e){
-//     e.target.style.textDecoration = 'line-through';
-// });
-// li.forEach(function(i){
-//     i.addEventListener('click', function(e){
-//         e.stopPropagation();
-//     });
-// });
+const newUl = document.querySelector("#newUl");
+
+// pranjal's technique
+/* const newUlArr = Array.from(newUl.children);
+newUlArr.forEach(li => {
+  li.addEventListener("click", e => {
+    li.remove();
+  });
+}); */
+
+// sir's technique
+newUl.addEventListener("click", e => {
+  if (e.target.nodeName === "LI") {
+    e.target.remove();
+  }
+});
+
+// STOP PROPAGATION
+console.log("***STOP PROPAGATION***");
+
+// bakwas code
+/* let li = document.querySelectorAll("li");
+
+ul.addEventListener("click", function (e) {
+  e.target.style.textDecoration = "line-through";
+});
+
+li.forEach(function (i) {
+  i.addEventListener("click", function (e) {
+    e.stopPropagation();
+  });
+}); */
+
+// PREVENT DEFAULT
+console.log("***PREVENT DEFAULT***");
+
+/* const formBtn = document.querySelector("#btn");
+formBtn.addEventListener("click", e => {
+  console.log("form submitted");
+  e.preventDefault();
+  console.log(formBtn.parentElement.name.value);
+  console.log(formBtn.parentElement.age.value);
+}); */
+
+const form = document.querySelector("form");
+form.addEventListener("submit", e => {
+  e.preventDefault();
+  const name = form.name.value;
+  const age = e.target.age.value;
+  console.log("form submitted");
+  form.nextElementSibling.innerText = `Name: ${name}, Age: ${age}`;
+});
