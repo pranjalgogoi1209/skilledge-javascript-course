@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color change</title>
+  </head>
+  <body>
+    <button>Change color</button>
+    <script>
+      const colors = [
+        "green",
+        "red",
+        "yellow",
+        "pink",
+        "orange",
+        "purple",
+        "#ccc",
+      ];
+
+      const btn = document.querySelector("button");
+
+      let index = 0;
+
+      btn.addEventListener("click", () => {
+        btn.parentElement.style.backgroundColor = colors[index];
+        index++;
+        if (index === colors.length) {
+          index = 0;
+        }
+      });
+    </script>
+  </body>
+</html>
