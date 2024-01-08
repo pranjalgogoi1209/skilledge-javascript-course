@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+.navbar a {
+  color: white;
+  font-size: x-large;
+  text-decoration: none;
+}
+.navbar .logo {
+  font-size: xx-large;
+  cursor: pointer;
+  width: 20vw;
+  text-align: center;
+}
+.navbar .pages ul {
+  display: flex;
+  justify-content: space-between;
+  width: 30vw;
+}
+.navbar .register ul {
+  display: flex;
+  justify-content: space-between;
+  width: 15vw;
+}
+.home {
+  height: 13.4vh;
+}
+footer {
+  background-color: black;
+  color: white;
+}
