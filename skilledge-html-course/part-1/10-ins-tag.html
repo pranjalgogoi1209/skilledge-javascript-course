@@ -3,8 +3,27 @@
   <head>
     <title>INS TAG</title>
   </head>
+  <style>
+    .under {
+      position: relative;
+    }
+    .under::after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 0px;
+      height: 2px;
+      background-color: pink;
+      transition: all ease 0.5s;
+    }
+    .under:hover::after {
+      width: 90px;
+    }
+  </style>
   <body>
     <p>Hi, I am <ins>Pranjal Gogoi</ins></p>
     <!-- For underline any word or sentance , we use ins tag -->
+    <p class="under">Pranjal Gogoi</p>
   </body>
 </html>
