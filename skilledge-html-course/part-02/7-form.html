@@ -59,48 +59,71 @@
   </head>
   <body>
     <form action="#">
-      <label for="name">Name:</label>
-      <input type="text" id="name" placeholder="Enter your name" />
-      <br />
-      <br />
-      <label for="password">Password:</label>
-      <input type="password" id="password" placeholder="Enter your password" />
-      <br />
-      <br />
-      <label for="country">Select your country:</label>
-      <select name="#" id="country">
-        <option value="#">India</option>
-        <option value="#">Australia</option>
-        <option value="#">England</option>
-      </select>
-      <br />
-      <br />
-      <input type="radio" id="male" name="gender" />
-      <label for="male">Male</label>
-      <input type="radio" id="female" name="gender" />
-      <label for="female">Female</label>
-      <input type="radio" id="not to be mentioned" name="gender" />
-      <label for="not to be mentioned">Not to be mentioned</label>
-      <br />
-      <br />
-      <p>Skills:</p>
-      <label for="C">C</label>
-      <input type="checkbox" id="C" />
-      <label for="C++">C++</label>
-      <input type="checkbox" id="C++" />
-      <label for="Python">Python</label>
-      <input type="checkbox" id="Python" />
-      <br />
-      <br />
-      <label for="textarea">Review:</label>
-      <textarea
-        name="#"
-        id="textarea"
-        cols="30"
-        rows="10"
-        placeholder="Type your review"
-      ></textarea>
-      <button>Submit</button>
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" />
+      </div>
+
+      <div>
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+        />
+      </div>
+
+      <div>
+        <label for="country">Select your country:</label>
+        <select name="#" id="country">
+          <option value="#" selected>India</option>
+          <option value="#">Australia</option>
+          <option value="#">England</option>
+        </select>
+      </div>
+
+      <div>
+        <div>
+          <input type="radio" id="male" name="gender" />
+          <label for="male">Male</label>
+        </div>
+        <div>
+          <input type="radio" id="female" name="gender" />
+          <label for="female">Female</label>
+        </div>
+        <div>
+          <input type="radio" id="not to be mentioned" name="gender" />
+          <label for="not to be mentioned">Not to be mentioned</label>
+        </div>
+      </div>
+
+      <div>
+        <p>Skills:</p>
+        <div>
+          <label for="C">C</label>
+          <input type="checkbox" id="C" />
+        </div>
+        <div>
+          <label for="C++">C++</label>
+          <input type="checkbox" id="C++" />
+        </div>
+        <div>
+          <label for="Python">Python</label>
+          <input type="checkbox" id="Python" />
+        </div>
+      </div>
+
+      <div>
+        <label for="textarea">Review:</label>
+        <textarea
+          name="#"
+          id="textarea"
+          placeholder="Type your review"
+          style="resize: none; width: 50vw; height: 20vw"
+        ></textarea>
+      </div>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
     </form>
   </body>
 </html>
